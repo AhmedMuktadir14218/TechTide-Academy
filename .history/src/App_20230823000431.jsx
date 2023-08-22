@@ -2,7 +2,7 @@ function App() {
  
   return (
     <>
-    <h1>Hellop react </h1>
+    <h1></h1>
     </>
   )
 }
