@@ -1,13 +1,5 @@
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
-    const navOptions = <>
-    <li><Link to='/'>Home</Link></li>
-    <li><Link to='/menu'>Menu</Link></li>
-    <li><Link to='/order'>Order</Link></li>
-</>
-
     return (
         <>
         <div className="max-w-screen-xl navbar fixed z-10 bg-opacity-30 bg-black text-white">
