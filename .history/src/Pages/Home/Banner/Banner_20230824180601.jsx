@@ -1,6 +1,6 @@
 
 import homebgimg from "../../../assets/wepik-export-20230824114557SK3Q.jpeg";
-// import './Banner.css';
+import './Banner.css';
 // import phone from '../../images/phone-28-24.png';
 import { Link } from 'react-router-dom';
 const Banner = () => {
@@ -19,7 +19,7 @@ const Banner = () => {
       <div className="c_padding hero min-h-screen bg-base-200" style={{ backgroundImage: `url(${homebgimg})` }}>
   <div className="hero-content lg:flex-row-reverse">
     {/* <img src="/src/images/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt='' className="max-w-sm rounded-lg shadow-2xl" /> */}
-    <div className="ml-12" style={SizeNav}>
+    <div className="ml-5 ml-5" style={SizeNav}>
       <h1 className="text-5xl font-bold">We Will Keep You An <br /> Impacable Look!</h1>
      <p className='my-2.5 text-slate-300'>
       3891 Ranchview Dr. Richardson, <br />
