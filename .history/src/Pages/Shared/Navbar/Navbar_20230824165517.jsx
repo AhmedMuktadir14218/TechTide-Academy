@@ -5,10 +5,7 @@ const Navbar = () => {
     const navOptions = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/allcourses'>All Courses</Link></li>
-    <li><Link to='/about'>About</Link></li>
-    <li><Link to='/team'>Team</Link></li>
-    <li><Link to='/pricing'>Pricing</Link></li>
-    <li><Link to='/contuct'>Contact Us</Link></li>
+    <li><Link to='/about'>A</Link></li>
 </>
 
     return (
@@ -24,7 +21,7 @@ const Navbar = () => {
    </ul>
  </div>
  
- <a className="btn btn-ghost normal-case text-xl"><img className="object-contain h-6 w-8 ..." src="/src/assets/logo.png" alt="" /> <Link to="/" >TechTide Academy</Link></a>
+ <a className="btn btn-ghost normal-case text-xl"><img className="object-contain h-6 w-8 ..." src="/src/assets/logo.png" alt="" /> <Link to="/" >Flavor Fusion</Link></a>
 </div>
 <div className="navbar-center hidden lg:flex">
  <ul className="menu menu-horizontal px-1">

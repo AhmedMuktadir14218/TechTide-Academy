@@ -24,7 +24,7 @@ const Navbar = () => {
    </ul>
  </div>
  
- <a className="btn btn-ghost normal-case text-xl"><img className="object-contain h-6 w-8 ..." src="/src/assets/logo.png" alt="" /> <Link to="/" >TechTide Academy</Link></a>
+ <a className="btn btn-ghost normal-case text-xl"><img className="object-contain h-6 w-8 ..." src="/src/assets/logo.png" alt="" /> <Link to="/" >Flavor Fusion</Link></a>
 </div>
 <div className="navbar-center hidden lg:flex">
  <ul className="menu menu-horizontal px-1">
