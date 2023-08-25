@@ -1,4 +1,4 @@
-import { awrapper } from "../../../dummydata"
+import { awrapper } from "../../dummydata"
 
 const Awrapper = () => {
   return (

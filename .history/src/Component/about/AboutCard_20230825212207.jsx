@@ -1,6 +1,6 @@
 import Heading from "../common/heading/Heading"
 import "./about.css"
-import { homeAbout } from "../../../dummydata"
+import { homeAbout } from "../../../"
 import Awrapper from "./Awrapper"
 
 const AboutCard = () => {
