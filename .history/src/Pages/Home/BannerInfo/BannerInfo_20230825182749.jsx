@@ -13,7 +13,8 @@ const BannerInfo = () => {
      
 
         <img src={bannimg} alt="" />
-    
+      {/* </div> */}
+      
     </div>
   </div>
 </div>   
