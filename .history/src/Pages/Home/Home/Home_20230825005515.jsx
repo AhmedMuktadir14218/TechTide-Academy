@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <Banner/>
-            <BannerInfo></BannerInfo>
+            <BannerInfo
         </>
     );
 };
