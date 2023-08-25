@@ -4,8 +4,8 @@ const CourseList = ({courses}) => {
     
     return (
       <>
-         <div className="card w-70 h-85 bg-accent shadow-xl">
-  <figure className="px-8 pt-8">
+         <div className="card w-80 bg-accent shadow-xl">
+  <figure className="px-10 pt-10">
     <img src={cover} alt="Shoes" className="rounded-xl" />
   </figure>
   <div className="card-body items-center text-center">

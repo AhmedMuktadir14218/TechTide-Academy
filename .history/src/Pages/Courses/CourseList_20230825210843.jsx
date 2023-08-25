@@ -4,7 +4,7 @@ const CourseList = ({courses}) => {
     
     return (
       <>
-         <div className="card w-70 h-85 bg-accent shadow-xl">
+         <div className="card w-70 h-8 bg-accent shadow-xl">
   <figure className="px-8 pt-8">
     <img src={cover} alt="Shoes" className="rounded-xl" />
   </figure>
