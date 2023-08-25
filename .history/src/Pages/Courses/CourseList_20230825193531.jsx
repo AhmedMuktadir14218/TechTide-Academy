@@ -3,7 +3,7 @@ const CourseList = ({course}) => {
     const { cover, coursesName,  pricePer } = course;
     return (
       <div>
-        <div className="card w-86  shadow-xl">
+        <div className="card w-86 bg-neutral shadow-xl">
           <figure className="ap_figure px-8 pt-8">
             <img src={cover} alt=" " className="rounded-xl" />
           </figure>

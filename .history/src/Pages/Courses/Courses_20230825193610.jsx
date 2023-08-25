@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import CourseList from "./CourseList";
 
 const Courses = () => {
-    const [course,setCourse]= useState([]);
+    const [course,setCourse]= useState();
 
     
      useEffect(() => {
         fetch('Courses.json')
             .then(res => res.json())
             .then(data => setCourse(data))
-            // .then(data => console.log(data))
     }, [])
     return (
         <>

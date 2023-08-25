@@ -9,7 +9,7 @@ const Courses = () => {
         fetch('Courses.json')
             .then(res => res.json())
             .then(data => setCourse(data))
-            // .then(data => console.log(data))
+            .then(data => setCourse(data))
     }, [])
     return (
         <>
