@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line react/prop-types
 const CourseList = ({courses}) => {
     const { cover, coursesName,  pricePer } = courses;
     return (
