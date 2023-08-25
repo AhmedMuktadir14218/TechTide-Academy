@@ -2,10 +2,10 @@ import aboutimg from "../../../public/images/blog/about.webp"
 const About = () => {
     return (
         <>
-           <div className="grid grid-cols-2  gap-4">
+           <div className="grid grid-cols-2   gap-4">
   <div>
     
-        <img className="w-half h-100" src={aboutimg} alt="" />
+        <img src={aboutimg} alt="" />
   </div>
   
   <div>
