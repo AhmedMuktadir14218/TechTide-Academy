@@ -26,6 +26,8 @@ const Banner = () => {
       California 62639
       </p>
       <div style={{"display":"flex"}}>
+        {/* <div><span> <img src={phone} alt="" /> </span></div> */}
+        
       <h1>  +1 234 567 890</h1>
       </div>
       <div className='my-3.5'>

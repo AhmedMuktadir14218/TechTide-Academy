@@ -1,6 +1,6 @@
 
 import homebgimg from "../../../assets/wepik-export-20230824114557SK3Q.jpeg";
-// import './Banner.css';
+import './Banner.css';
 // import phone from '../../images/phone-28-24.png';
 import { Link } from 'react-router-dom';
 const Banner = () => {

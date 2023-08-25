@@ -2,7 +2,7 @@
     z-index: 0;
     display: flex;
     align-items: center !important;
-    /* justify-content: start !important; */
+    justify-content: start ;
     
 }
 .hero{display: grid;
