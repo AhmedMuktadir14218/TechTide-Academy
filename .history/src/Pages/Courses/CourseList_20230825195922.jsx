@@ -1,6 +1,6 @@
 
-const CourseList = ({courses}) => {
-    const { cover, coursesName,  pricePer } = courses;
+const CourseList = (props) => {
+    const { cover, coursesName,  pricePer } = props.courses;
     return (
       <div>
         <div className="card w-86 bg-accent shadow-xl">

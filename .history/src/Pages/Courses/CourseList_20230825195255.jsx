@@ -1,9 +1,10 @@
+import Courses from "./Courses";
 
 const CourseList = ({courses}) => {
-    const { cover, coursesName,  pricePer } = courses;
+    const { cover, coursesName,  pricePer } = Courses;
     return (
       <div>
-        <div className="card w-86 bg-accent shadow-xl">
+        <div className="card w-86  shadow-xl">
           <figure className="ap_figure px-8 pt-8">
             <img src={cover} alt=" " className="rounded-xl" />
           </figure>
