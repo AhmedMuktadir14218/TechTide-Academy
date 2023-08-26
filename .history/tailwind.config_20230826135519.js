@@ -8,7 +8,7 @@ export default {
     themes: [
       {
         doctortheme:{
-          "primary": "#1eb2a6",
+          "primary": "#ff0000",
           "secondary": "#202020",
           "accent": "#5d5656",
           "neutral": "#2c2c2c",

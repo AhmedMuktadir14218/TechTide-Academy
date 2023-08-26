@@ -11,7 +11,7 @@ const AboutItem = () => {
 
   return (
     <>
-      <div className="grid lg:gap-8 sm:gap-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-#f6f6f6 ">
+      <div className="grid lg:gap-8 sm:gap-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-cyan-500 ">
         {/* textinfo */}
       <div className="sm:mx-5 sm:my-4">
           <h3 className="uppercase font-bold text-blue-600"> Learn Anything</h3>
