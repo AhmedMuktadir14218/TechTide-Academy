@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <Banner/>
             <AboutItem></AboutItem>
-            <Testimonial></Testimonial>
+            <Testimonial
         </>
     );
 };
