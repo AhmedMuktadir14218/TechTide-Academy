@@ -14,7 +14,7 @@ const CourseList = ({courses}) => {
     <h2 className="card-title">{coursesName}</h2>
     <p>{pricePer}</p>
     <div className="card-actions">
-      <button className="btn btn-neutral ">Enroll Now</button>
+      <button className="btn btn-blue-600 ho">Enroll Now</button>
     </div>
   </div>
 </div>
