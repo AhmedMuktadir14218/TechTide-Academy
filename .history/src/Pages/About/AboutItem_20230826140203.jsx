@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import aboutimg from "../../../public/images/blog/about.webp";
-
-import AboutOption from "./AboutOption";
 const AboutItem = () => {
   const [about, setAbout] = useState([]);
   useEffect(() => {
     fetch("HomeAbout.json")
       .then((res) => res.json())
-      .then(data => setAbout(data))
+      // .then(data => setAbout(data))
       .then((data) => console.log(data));
   }, []);
 
@@ -23,7 +21,9 @@ const AboutItem = () => {
           {/* Course info */}
           <div className="grid grid-rows-1 gap-4">
             {
-                about.map(option => <AboutOption  key={option._id} abouts={option} ></AboutOption>)
+                 course.map(option => <CourseList
+                    key={option._id} courses={option} 
+                >
             }
 
           </div>

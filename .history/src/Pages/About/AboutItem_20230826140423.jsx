@@ -7,7 +7,7 @@ const AboutItem = () => {
   useEffect(() => {
     fetch("HomeAbout.json")
       .then((res) => res.json())
-      .then(data => setAbout(data))
+      // .then(data => setAbout(data))
       .then((data) => console.log(data));
   }, []);
 
@@ -23,7 +23,7 @@ const AboutItem = () => {
           {/* Course info */}
           <div className="grid grid-rows-1 gap-4">
             {
-                about.map(option => <AboutOption  key={option._id} abouts={option} ></AboutOption>)
+                about.map(option => <AboutOption></AboutOption>)
             }
 
           </div>
