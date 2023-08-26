@@ -1,4 +1,3 @@
-import AboutItem from "../../About/AboutItem";
 import Banner from "../Banner/Banner";
 import BannerInfo from "../BannerInfo/BannerInfo";
 
@@ -7,7 +6,7 @@ const Home = () => {
         <>
             <Banner/>
             {/* <BannerInfo></BannerInfo> */}
-            <AboutItem></AboutItem>
+            <Abou
         </>
     );
 };
