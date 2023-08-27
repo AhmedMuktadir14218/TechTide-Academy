@@ -3,7 +3,7 @@
       "_id": 1,
       "cover": "../images/courses/c1.png",
       "coursesName": "Introducing to Software Engineering",
-      "type":"popular",
+      "type":"",
       "courseTeacher": [
         {
          "dCover": "./images/back.webp",
@@ -78,7 +78,7 @@
       "_id": 6,
       "cover": "../images/courses/c6.png",
       "coursesName": "Learn Frontend Programming Language",
-      "type":"popular",
+      "type":"normal",
 "courseTeacher": [
         {
          "dCover": "./images/back.webp",

@@ -4,7 +4,7 @@ const ContactUs = () => {
     return (
         <>
         <ContactBanner></ContactBanner>
-        <ContactItem></ContactItem>
+        <ContactItem
    
         </>
     );

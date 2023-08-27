@@ -3,7 +3,7 @@
       "_id": 1,
       "cover": "../images/courses/c1.png",
       "coursesName": "Introducing to Software Engineering",
-      "type":"popular",
+      "type":"",
       "courseTeacher": [
         {
          "dCover": "./images/back.webp",
@@ -48,8 +48,7 @@
       "_id": 4,
       "cover": "../images/courses/c4.png",
       "coursesName": "Introducing to Programming with WordPress",
-      "type":"normal",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Prabin Thapa Mager",
@@ -63,8 +62,7 @@
       "_id": 5,
       "cover": "../images/courses/c5.png",
       "coursesName": "Introducing to Programming with ReactJS",
-      "type":"normal",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Sunil Bishowkaram",
@@ -78,8 +76,7 @@
       "_id": 6,
       "cover": "../images/courses/c6.png",
       "coursesName": "Learn Frontend Programming Language",
-      "type":"popular",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Sunil Bishowkaram",
@@ -93,8 +90,7 @@
       "_id": 7,
       "cover": "../images/courses/c7.png",
       "coursesName": "Introducing to with HTML / CSS",
-      "type":"normal",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Price",
@@ -108,8 +104,7 @@
       "_id": 8,
       "cover": "../images/courses/c8.png",
       "coursesName": "Introducing to with JAVA",
-      "type":"normal",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Petter",
@@ -123,8 +118,7 @@
       "_id": 9,
       "cover": "../images/courses/c9.png",
       "coursesName": "Introducing to with HTML / CSS / JAVASCRIPT",
-      "type":"popular",
-"courseTeacher": [
+      "courseTeacher": [
         {
          "dCover": "./images/back.webp",
           "name": "by Petter",

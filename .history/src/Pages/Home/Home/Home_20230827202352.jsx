@@ -1,5 +1,4 @@
 import AboutItem from "../../About/AboutItem";
-import ContactItem from "../../ContactUs/ContactItem";
 import Banner from "../Banner/Banner";
 import Testimonial from "../Testimonial/Testimonial";
 
@@ -9,7 +8,7 @@ const Home = () => {
             <Banner/>
             <AboutItem></AboutItem>
             <Testimonial></Testimonial>
-            <ContactItem></ContactItem>
+            <Cont
         </>
     );
 };
