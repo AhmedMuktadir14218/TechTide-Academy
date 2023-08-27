@@ -3,7 +3,6 @@ const AboutBanner = () => {
     return (
         <>
          <div className="hero h-[480px]"style={{ backgroundImage: `url(${aboutbgimg})` }}>
-          
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-info-content">
     <div className="max-w-md">
