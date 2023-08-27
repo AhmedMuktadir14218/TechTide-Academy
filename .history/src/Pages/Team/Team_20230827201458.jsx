@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TeamList from "./TeamList";
-import TeamBanner from "../../Component/TeamBanner";
+import AboutBanner from "../../Component/AboutBanner/AboutBanner";
 
 const Team = () => {
     const [team,setTeam]=useState([]);
@@ -13,7 +13,7 @@ const Team = () => {
      
     return (
         <>
-        <TeamBanner></TeamBanner>
+        {/* <AboutBanner></AboutBanner> */}
             <div className=' grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 mb-8 '>
                 {
                     team.map(teamCard => <TeamList

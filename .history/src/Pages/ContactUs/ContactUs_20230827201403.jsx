@@ -1,8 +1,8 @@
-import ContactBanner from "../../Component/contactBanner";
+import contactBanner from "../../Component/contactBanner";
 const ContactUs = () => {
     return (
         <>
-        <ContactBanner></ContactBanner>
+        <contactBanner
 <div className="container my-24 mx-auto md:px-6">
   <section className="mb-32 text-center">
     <div className="py-12 md:px-12">

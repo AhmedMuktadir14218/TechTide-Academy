@@ -1,5 +1,5 @@
-import coursebgimg from '../../public/images/blog/b3.webp'
-const TeamBanner = () => {
+import coursebgimg from '../../public/images//blog'
+const contactBanner = () => {
     return (
         <>
             <div className="hero h-[480px]" style={{ backgroundImage: `url(${coursebgimg})` }}>
@@ -14,4 +14,4 @@ const TeamBanner = () => {
     );
 };
 
-export default TeamBanner;
+export default contactBanner;

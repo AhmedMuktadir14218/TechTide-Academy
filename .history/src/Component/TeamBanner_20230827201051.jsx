@@ -1,4 +1,4 @@
-import coursebgimg from '../../public/images/blog/b3.webp'
+
 const TeamBanner = () => {
     return (
         <>
