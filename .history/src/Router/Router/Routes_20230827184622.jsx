@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
     {
       
       path:'/team',
-      element:<Team></Team>
+      element:<Team
     },
   
   ]}
