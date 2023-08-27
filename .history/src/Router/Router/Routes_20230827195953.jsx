@@ -4,7 +4,6 @@ import Main from "../../Layout/Main";
 import Courses from "../../Pages/Courses/Courses";
 import About from "../../Pages/About/About";
 import Team from "../../Pages/Team/Team";
-import ContactUs from "../../Pages/ContactUs/ContactUs";
 // import About from "../../Component/about/About";
 
 export const router = createBrowserRouter([
@@ -34,8 +33,8 @@ export const router = createBrowserRouter([
     },
     {
       
-      path:'/contact',
-      element:<ContactUs></ContactUs>
+      path:'/team',
+      element:<
     },
   
   ]}
