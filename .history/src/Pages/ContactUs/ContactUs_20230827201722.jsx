@@ -3,7 +3,7 @@ const ContactUs = () => {
     return (
         <>
         <ContactBanner></ContactBanner>
-<div className="container  mx-auto md:px-6">
+<div className="container my-10 mx-auto md:px-6">
   <section className="mb-32 text-center">
     <div className="py-12 md:px-12">
       <div className="container mx-auto xl:px-32">

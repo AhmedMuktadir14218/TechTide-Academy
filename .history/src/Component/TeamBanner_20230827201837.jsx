@@ -6,7 +6,7 @@ const TeamBanner = () => {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-info-content">
     <div className="">
-      <h1 className="mb-5 text-6xl uppercase font-bold text-white">Our Hounarable <br /> Instractor</h1>
+      <h1 className="mb-5 text-6xl uppercase font-bold">Hounarable </h1>
     </div>
   </div>
 </div>

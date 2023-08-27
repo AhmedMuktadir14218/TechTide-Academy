@@ -6,7 +6,7 @@ const contactBanner = () => {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-info-content">
     <div className="">
-      <h1 className="mb-5 text-6xl uppercase font-bold text-white">Contact <br /> With Us</h1>
+      <h1 className="mb-5 text-6xl uppercase font-bold">Explore Our <br /> Courses</h1>
     </div>
   </div>
 </div>
