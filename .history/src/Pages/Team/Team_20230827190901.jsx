@@ -12,15 +12,11 @@ const Team = () => {
      
     return (
         <div>
-            <div className=' grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 mb-8 '>
-                {
-                    team.map(option => <TeamList
-                        key={option._id} teams={option} 
-                    >
+            {
+                team.map(op=><h1 op.key>
 
-                    </TeamList>)
-                }
-                </div>
+                </h1>)
+            }
         </div>
     );
 };

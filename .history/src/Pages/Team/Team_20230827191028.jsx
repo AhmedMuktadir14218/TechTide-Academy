@@ -14,11 +14,11 @@ const Team = () => {
         <div>
             <div className=' grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 mb-8 '>
                 {
-                    team.map(option => <TeamList
-                        key={option._id} teams={option} 
+                    team.map(option => <Team
+                        key={option._id} courses={option} 
                     >
 
-                    </TeamList>)
+                    </Team>)
                 }
                 </div>
         </div>

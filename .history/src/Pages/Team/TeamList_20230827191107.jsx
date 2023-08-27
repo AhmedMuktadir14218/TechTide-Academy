@@ -1,10 +1,9 @@
 
-const TeamList = ({teams}) => {
-  const []
+const TeamList = () => {
     return (
         <>
          <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src={} alt="Shoes" /></figure>
+  <figure><img src= alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">Shoes!</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
