@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
     {
       
       path:'/price',
-      element:<Price></Price>
+      element:<Price
     },
   
   ]}
