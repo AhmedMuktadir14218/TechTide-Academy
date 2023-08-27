@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TeamList from "./TeamList";
-import AboutBanner from "../../Component/AboutBanner/AboutBanner";
+import AboutBanner from "../../Component/";
 
 const Team = () => {
     const [team,setTeam]=useState([]);
