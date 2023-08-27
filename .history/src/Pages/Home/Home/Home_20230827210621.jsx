@@ -10,15 +10,11 @@ const Home = () => {
             <Banner/>
             <AboutItem></AboutItem>
             <div className="text-center font-bold">
-                <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Our Popular Courses</h3>
-                <h1 className="text-black lg:text-4xl sm:text-2xl">Explore Our Popular Online Courses</h1>
+                <h3 className="bg-blue">Our Popular Course</h3>
             </div>
             <PopularCourse></PopularCourse>
-          
             <Testimonial></Testimonial>
-            <div className="text-center font-bold">
-            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Contact with us</h3>
-           </div>
+            
             <ContactItem></ContactItem>
 
         </>

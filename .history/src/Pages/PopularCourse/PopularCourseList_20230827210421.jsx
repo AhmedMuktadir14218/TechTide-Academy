@@ -19,7 +19,7 @@ const PopularCourseList = ({popucourses}) => {
   </div>
 </div>
       </>   
-        
+        </>
     );
 };
 

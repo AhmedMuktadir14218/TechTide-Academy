@@ -16,9 +16,7 @@ const Home = () => {
             <PopularCourse></PopularCourse>
           
             <Testimonial></Testimonial>
-            <div className="text-center font-bold">
-            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Contact with us</h3>
-           </div>
+            
             <ContactItem></ContactItem>
 
         </>

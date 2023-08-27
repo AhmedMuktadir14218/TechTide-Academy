@@ -3,10 +3,9 @@ const Testimonial = () => {
     return (
         <section className="bg-white">
   <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-  <div className="text-center font-bold">
-            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Testimonial</h3>
-            <h1 className="text-black lg:text-4xl sm:text-2xl">Our Successful Students</h1>
-            </div>
+    <h2 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+      Read trusted reviews from our Students
+    </h2>
 
     <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       <blockquote className="rounded-lg bg-gray-100 p-8">

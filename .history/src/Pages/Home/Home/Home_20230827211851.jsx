@@ -14,11 +14,12 @@ const Home = () => {
                 <h1 className="text-black lg:text-4xl sm:text-2xl">Explore Our Popular Online Courses</h1>
             </div>
             <PopularCourse></PopularCourse>
-          
-            <Testimonial></Testimonial>
             <div className="text-center font-bold">
-            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Contact with us</h3>
-           </div>
+            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Testimonial</h3>
+            <h1 className="text-black lg:text-4xl sm:text-2xl">Our Successful Students</h1>
+            </div>
+            <Testimonial></Testimonial>
+            
             <ContactItem></ContactItem>
 
         </>
