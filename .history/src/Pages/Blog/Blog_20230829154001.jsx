@@ -1,6 +1,6 @@
 import blogimg1 from "../../../public/images/testo/t1.webp"
 import blogimg2 from "../../../public/images/testo/t2.webp"
-import blogimg3 from "../../../public/images/testo/t3.webp"
+import blogimg3 from "../../../public/images/testo/t1.webp"
 const Blog = () => {
     return (
         <>

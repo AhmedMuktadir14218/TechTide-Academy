@@ -1,6 +1,4 @@
-import blogimg1 from "../../../public/images/testo/t1.webp"
-import blogimg2 from "../../../public/images/testo/t2.webp"
-import blogimg3 from "../../../public/images/testo/t3.webp"
+import blogimg1 from
 const Blog = () => {
     return (
         <>
@@ -68,7 +66,7 @@ const Blog = () => {
 >
   <img
     alt="Office"
-    src={blogimg3}
+    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
     className="h-56 w-full object-cover"
   />
 
@@ -118,7 +116,7 @@ const Blog = () => {
 >
   <img
     alt="Office"
-    src={blogimg2}
+    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
     className="h-56 w-full object-cover"
   />
 
