@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import iconimg from '../../../assets/mortarboard.png'
 
 const Navbar = () => {
 
@@ -25,7 +24,7 @@ const Navbar = () => {
    </ul>
  </div>
  
- <a className="btn btn-ghost  normal-case lg:text-xl sm:text-md"><img className="object-contain h-6 w-8 ..." src={iconimg} alt="" /> <Link to="/" >TechTide Academy</Link></a>
+ <a className="btn btn-ghost  normal-case lg:text-xl sm:text-md"><img className="object-contain h-6 w-8 ..." src="./../../../assets/mortarboard.png" alt="" /> <Link to="/" >TechTide Academy</Link></a>
 </div>
 <div className="navbar-center hidden lg:flex">
  <ul className="menu menu-horizontal px-1 font-bold">
