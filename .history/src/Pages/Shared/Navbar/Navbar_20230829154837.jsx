@@ -24,7 +24,7 @@ const Navbar = () => {
    </ul>
  </div>
  
- <a className="btn btn-ghost  normal-case lg:text-xl sm:text-md"><img className="object-contain h-6 w-8 ..." src="/src/assets/react.svg" alt="" /> <Link to="/" >TechTide Academy</Link></a>
+ <a className="btn btn-ghost normal-case lg:text-xl sm:text-md"><img className="object-contain h-6 w-8 ..." src="/src/assets/react.svg" alt="" /> <Link to="/" >TechTide Academy</Link></a>
 </div>
 <div className="navbar-center hidden lg:flex">
  <ul className="menu menu-horizontal px-1 font-bold">
@@ -32,7 +32,7 @@ const Navbar = () => {
  </ul>
 </div>
 <div className="navbar-end">
- <Link to='*' className="btn btn-primary hover:bg-blue-600">Login</Link>
+ <Link to='*' className="btn btn-primary ">Login</Link>
 </div>
 </div>
      </>
