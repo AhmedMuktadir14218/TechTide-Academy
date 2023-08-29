@@ -1,4 +1,4 @@
-// import coursebgimg from '../../../public/images/blog/b6.webp'
+import coursebgimg from '../../../public/images/blog/b6.webp'
 import coursebgimg from '../../assets/web-development.png'
 const CoursesBanner = () => {
     return (
