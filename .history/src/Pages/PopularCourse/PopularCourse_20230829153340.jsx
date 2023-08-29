@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import PopularCourseList from "./PopularCourseList";
-import useCourse from "../../Hooks/useCourse";
 
 const PopularCourse = () => {
     // const [popuCourse,setPopuCourse]= useState([]);
@@ -12,8 +12,8 @@ const PopularCourse = () => {
     //         .then(data => setPopuCourse(data))
     //         // .then(data => console.log(data))
     // }, [])
-const[course]=useCourse()
-    const popular = course.filter(item => item.type === 'popular');
+const
+    const popular = popuCourse.filter(item => item.type === 'popular');
     
     return (
         <>

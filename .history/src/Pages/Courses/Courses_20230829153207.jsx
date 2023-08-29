@@ -1,9 +1,8 @@
 import CourseList from "./CourseList";
 import CoursesBanner from "../../Component/CoursesBanner/CoursesBanner";
-import useCourse from "../../Hooks/useCourse";
 
 const Courses = () => {
-    const [course]=useCourse()
+   
     return (
         <>
         <CoursesBanner></CoursesBanner>

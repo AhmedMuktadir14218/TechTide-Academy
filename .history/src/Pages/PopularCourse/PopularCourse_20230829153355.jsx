@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import PopularCourseList from "./PopularCourseList";
 import useCourse from "../../Hooks/useCourse";
 

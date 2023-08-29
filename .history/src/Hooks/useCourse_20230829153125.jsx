@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const useCourse = () => {
     
@@ -13,7 +13,7 @@ const useCourse = () => {
            .then(data => setCourse(data))
            // .then(data => console.log(data))
    }, [])
-    return [course, loading]
+    return [menu, loading]
 };
 
 export default useCourse;
