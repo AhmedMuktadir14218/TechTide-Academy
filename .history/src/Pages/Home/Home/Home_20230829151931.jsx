@@ -18,9 +18,8 @@ const Home = () => {
           
             <Testimonial></Testimonial>
             <div className="text-center font-bold">
-                <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Blog</h3>
-                <h1 className="text-black lg:text-4xl sm:text-2xl">Recent From Blog</h1>
-            </div>
+            <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Contact with us</h3>
+           </div>
             <Blog></Blog>
             <div className="text-center font-bold">
             <h3 className="text-blue-600 lg:text-2xl sm:text-xl uppercase">Contact with us</h3>

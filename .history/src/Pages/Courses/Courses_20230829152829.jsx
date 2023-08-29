@@ -3,7 +3,17 @@ import CourseList from "./CourseList";
 import CoursesBanner from "../../Component/CoursesBanner/CoursesBanner";
 
 const Courses = () => {
-   
+
+    
+    // const [course,setCourse]= useState([]);
+
+    
+    //  useEffect(() => {
+    //     fetch('Courses.json')
+    //         .then(res => res.json())
+    //         .then(data => setCourse(data))
+    //         // .then(data => console.log(data))
+    // }, [])
     return (
         <>
         <CoursesBanner></CoursesBanner>
