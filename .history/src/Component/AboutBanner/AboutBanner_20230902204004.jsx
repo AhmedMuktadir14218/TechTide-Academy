@@ -1,4 +1,4 @@
-// import aboutbgimg from "../../../public/images/blog/b1.webp"
+import aboutbgimg from "../../../public/images/blog/b1.webp"
 const AboutBanner = (props) => {
     return (
         <>

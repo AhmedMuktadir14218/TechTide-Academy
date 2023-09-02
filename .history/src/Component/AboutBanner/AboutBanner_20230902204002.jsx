@@ -1,8 +1,8 @@
-// import aboutbgimg from "../../../public/images/blog/b1.webp"
+import aboutbgimg from "../../../public/images/blog/b1.webp"
 const AboutBanner = (props) => {
     return (
         <>
-         <div className="hero h-[480px]"style={{ backgroundImage: `url(${props.img})` }}>
+         <div className="hero h-[480px]"style={{ backgroundImage: `url(${props})` }}>
           
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-info-content">

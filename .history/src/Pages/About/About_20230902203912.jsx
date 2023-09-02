@@ -1,10 +1,10 @@
 import AboutBanner from "../../Component/AboutBanner/AboutBanner";
 import AboutItem from "./AboutItem";
-import aboutbgimg from "../../../public/images/blog/b1.webp";
+import aboutbgimg from "../../"
 const About = () => {
     return (
         <>
-        <AboutBanner title="Home/About" img={aboutbgimg}></AboutBanner>
+        <AboutBanner title="Home/About"></AboutBanner>
            <AboutItem></AboutItem>
         </>
     );

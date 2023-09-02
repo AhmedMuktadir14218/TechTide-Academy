@@ -4,7 +4,7 @@ import aboutbgimg from "../../../public/images/blog/b1.webp";
 const About = () => {
     return (
         <>
-        <AboutBanner title="Home/About" img={aboutbgimg}></AboutBanner>
+        <AboutBanner title="Home/About" img={ab}></AboutBanner>
            <AboutItem></AboutItem>
         </>
     );
