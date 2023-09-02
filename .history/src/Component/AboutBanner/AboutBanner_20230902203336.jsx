@@ -1,5 +1,5 @@
 import aboutbgimg from "../../../public/images/blog/b1.webp"
-const AboutBanner = (props) => {
+const AboutBanner = ({}) => {
     return (
         <>
          <div className="hero h-[480px]"style={{ backgroundImage: `url(${aboutbgimg})` }}>

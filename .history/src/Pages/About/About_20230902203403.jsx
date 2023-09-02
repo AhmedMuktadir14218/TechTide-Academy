@@ -4,7 +4,7 @@ import AboutItem from "./AboutItem";
 const About = () => {
     return (
         <>
-        <AboutBanner title={"Home/About"}></AboutBanner>
+        <AboutBanner ></AboutBanner>
            <AboutItem></AboutItem>
         </>
     );
