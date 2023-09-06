@@ -32,7 +32,7 @@ const Navbar = () => {
    {navOptions}
  </ul>
 </div>
-<div className="navbar-end lg:mx-32">
+<div className="navbar-end lg:mx-3">
  <Link to='*' className="btn btn-primary hover:bg-blue-600">Login</Link>
 </div>
 </div>
