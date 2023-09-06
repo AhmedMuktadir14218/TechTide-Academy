@@ -61,7 +61,7 @@ const AboutItem = () => {
         </div>
 
         {/* image */}
-        <div className="sm:mx-5 sm:mb-4 ">
+        <div className="sm:mx-5 sm:mb-4 sm:hidden">
           <img className="w-half h-[588px]" src={aboutimg} alt="" />
         </div>
       </div>
