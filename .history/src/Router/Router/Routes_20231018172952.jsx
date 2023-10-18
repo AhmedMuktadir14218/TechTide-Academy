@@ -8,7 +8,6 @@ import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Price from "../../Pages/Price/Price";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import Login from "../../Pages/Authorization/Login/Login";
-import Signup from "../../Pages/Authorization/Signup/Signup";
 // import About from "../../Component/about/About";
 
 export const router = createBrowserRouter([
@@ -53,8 +52,8 @@ export const router = createBrowserRouter([
     },
     {
       
-      path:'/signup',
-      element:<Signup></Signup>
+      path:'/login',
+      element:<Login></Login>
     },
     {
       
