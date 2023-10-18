@@ -7,7 +7,6 @@ import Team from "../../Pages/Team/Team";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Price from "../../Pages/Price/Price";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
-import Login from "../../Pages/Authorization/Login/Login";
 // import About from "../../Component/about/About";
 
 export const router = createBrowserRouter([
@@ -48,7 +47,7 @@ export const router = createBrowserRouter([
     {
       
       path:'/login',
-      element:<Login></Login>
+      element:<Price></Price>
     },
     {
       
