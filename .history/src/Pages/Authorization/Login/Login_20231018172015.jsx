@@ -7,8 +7,8 @@ const Login = () => {
 <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
    
-    <div className="card flex-shrink-0 w-full  lg:mx-36 lg:my-36 max-w-sm shadow-2xl bg-base-100">
-      <form className="card-body ">
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <form className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -28,7 +28,7 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
-      <p className="text-center"><small>New Here? <Link to="/">Create an account</Link> </small></p>
+      <p className="text"><small>New Here? <Link to="/">Create an account</Link> </small></p>
     </div>
   </div>
 </div>
