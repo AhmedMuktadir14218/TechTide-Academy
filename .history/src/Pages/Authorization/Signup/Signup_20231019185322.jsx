@@ -40,6 +40,11 @@ const Signup = () => {
           Welcome to Squid 🦑
         </h1>
 
+        <p className="mt-4 leading-relaxed text-gray-500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam
+          dolorum aliquam, quibusdam aperiam voluptatum.
+        </p>
+
         <form action="#" className="mt-8 grid grid-cols-6 gap-6">
           <div className="col-span-6 sm:col-span-3">
             <label
