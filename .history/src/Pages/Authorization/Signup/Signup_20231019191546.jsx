@@ -155,7 +155,7 @@ const Signup = () => {
             </button>            
           </div>
           <p className="mt-4 text-sm text-gray-500 sm:mt-0 col-span-6  items-center justify-center sm:flex sm:items-center sm:gap-4">
-              Already have an account?<Link href="/login" className="text-gray-700 underline">Log in</Link>
+              Already have an account?<Link href="/login" className="text-gray-700 underline">  Log in</Link>.
             </p>
         </form>
       </div>
