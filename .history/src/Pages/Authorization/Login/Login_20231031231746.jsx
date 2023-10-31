@@ -18,25 +18,7 @@ const handleValidateCaptcha = (e) => {
       setDisabled(true)
   }
 }
-const handleLogin = event => {
-  event.preventDefault();
-  const form = event.target;
-  const email = form.email.value;
-  const password = form.password.value;
-  console.log(email, password);}
-  // loginUser(email,password)
-  // .then( userCredential => {
-      // Signed in 
-      // const loggedUser = userCredential.user;
-      // console.log(loggedUser)
-      // navigate(from, { replace: true });
-      // Swal.fire('Login Succesful')
-      
-      // ...
-    // })
-    // .catch( error => {
-    //   console.log(error)
-    // });
+
 
     return (
         <div>
@@ -46,7 +28,7 @@ const handleLogin = event => {
   <div className="hero-content flex-col lg:flex-row-reverse">
    
     <div className="card flex-shrink-0 w-full  lg:mx-36 lg:my-36 max-w-sm shadow-2xl bg-base-100">
-      <form className="card-body" onSubmit={handleLogin}>
+      <form className="card-body" onSubmit={}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>

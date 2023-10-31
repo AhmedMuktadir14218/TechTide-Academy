@@ -34,9 +34,9 @@ const handleLogin = event => {
       
       // ...
     // })
-    // .catch( error => {
-    //   console.log(error)
-    // });
+    .catch( error => {
+      console.log(error)
+    });
 
     return (
         <div>

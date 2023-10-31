@@ -23,8 +23,8 @@ const handleLogin = event => {
   const form = event.target;
   const email = form.email.value;
   const password = form.password.value;
-  console.log(email, password);}
-  // loginUser(email,password)
+  console.log(email, password);
+  // loginUser(email,password)}
   // .then( userCredential => {
       // Signed in 
       // const loggedUser = userCredential.user;
@@ -34,9 +34,9 @@ const handleLogin = event => {
       
       // ...
     // })
-    // .catch( error => {
-    //   console.log(error)
-    // });
+    .catch( error => {
+      console.log(error)
+    });
 
     return (
         <div>

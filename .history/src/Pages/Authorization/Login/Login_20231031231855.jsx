@@ -23,20 +23,20 @@ const handleLogin = event => {
   const form = event.target;
   const email = form.email.value;
   const password = form.password.value;
-  console.log(email, password);}
+  console.log(email, password);
   // loginUser(email,password)
-  // .then( userCredential => {
+  .then( userCredential => {
       // Signed in 
-      // const loggedUser = userCredential.user;
-      // console.log(loggedUser)
+      const loggedUser = userCredential.user;
+      console.log(loggedUser)
       // navigate(from, { replace: true });
-      // Swal.fire('Login Succesful')
+      Swal.fire('Login Succesful')
       
       // ...
-    // })
-    // .catch( error => {
-    //   console.log(error)
-    // });
+    })
+    .catch( error => {
+      console.log(error)
+    });
 
     return (
         <div>
