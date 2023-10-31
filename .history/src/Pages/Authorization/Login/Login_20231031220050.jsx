@@ -2,11 +2,6 @@ import { Link } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
-
-  useEffect(() => {
-    loadCaptchaEnginge(3);
-}, [])
-
     return (
         <div>
 
@@ -32,7 +27,7 @@ const Login = () => {
           </label>
         </div>
         <div>
-        <LoadCanvasTemplate />
+          
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>

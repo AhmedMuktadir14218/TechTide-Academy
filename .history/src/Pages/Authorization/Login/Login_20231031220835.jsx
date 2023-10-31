@@ -3,10 +3,7 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, val
 
 const Login = () => {
 
-  useEffect(() => {
-    loadCaptchaEnginge(3);
-}, [])
-
+  
     return (
         <div>
 
