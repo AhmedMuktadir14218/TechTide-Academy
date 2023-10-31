@@ -1,11 +1,10 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
 
   useEffect(() => {
-    loadCaptchaEnginge(8);
+    loadCaptchaEnginge(3);
 }, [])
 
     return (

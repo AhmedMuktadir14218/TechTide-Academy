@@ -5,7 +5,7 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, val
 const Login = () => {
 
   useEffect(() => {
-    loadCaptchaEnginge(8);
+    loadCaptchaEnginge(3);
 }, [])
 
     return (
