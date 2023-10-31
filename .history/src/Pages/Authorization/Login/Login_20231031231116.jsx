@@ -1,23 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
-  const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
-    loadCaptchaEnginge(4);
+    loadCaptchaEnginge(8);
 }, [])
-
-const handleValidateCaptcha = (e) => {
-  const user_captcha_value = e.target.value;
-  if (validateCaptcha(user_captcha_value)) {
-      setDisabled(false);
-  }
-  else {
-      setDisabled(true)
-  }
-}
 
     return (
         <div>
@@ -43,7 +32,7 @@ const handleValidateCaptcha = (e) => {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
-        <div  className="form-control">
+        <div>
         <LoadCanvasTemplate />
         <input  onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
 

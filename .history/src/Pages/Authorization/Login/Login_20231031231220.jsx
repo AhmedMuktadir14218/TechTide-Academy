@@ -6,7 +6,7 @@ const Login = () => {
   const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
-    loadCaptchaEnginge(4);
+    loadCaptchaEnginge(8);
 }, [])
 
 const handleValidateCaptcha = (e) => {
@@ -43,7 +43,7 @@ const handleValidateCaptcha = (e) => {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
-        <div  className="form-control">
+        <div>
         <LoadCanvasTemplate />
         <input  onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
 

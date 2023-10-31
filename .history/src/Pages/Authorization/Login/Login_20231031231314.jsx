@@ -6,7 +6,7 @@ const Login = () => {
   const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
-    loadCaptchaEnginge(4);
+    loadCaptchaEnginge(8);
 }, [])
 
 const handleValidateCaptcha = (e) => {
