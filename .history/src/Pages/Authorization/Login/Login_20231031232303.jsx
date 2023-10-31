@@ -6,7 +6,7 @@ const Login = () => {
   const [disabled, setDisabled] = useState(true);
 
   useEffect(() => {
-    loadCaptchaEnginge(2);
+    loadCaptchaEnginge(4);
 }, [])
 
 const handleValidateCaptcha = (e) => {
@@ -24,24 +24,21 @@ const handleLogin = event => {
   const email = form.email.value;
   const password = form.password.value;
   console.log(email, password);
-  // loginUser(email,password)
-  // .then( userCredential => {
-  //     // Signed in 
-  //     const loggedUser = userCredential.user;
-  //     console.log(loggedUser)
-  //     navigate(from, { replace: true });
-  //     Swal.fire('Login Succesful')
+  loginUser(email,password)
+  .then( userCredential => {
+      // Signed in 
+      const loggedUser = userCredential.user;
+      console.log(loggedUser)
+      navigate(from, { replace: true });
+      Swal.fire('Login Succesful')
       
-  //     // ...
-  //   })
-  //   .catch( error => {
-  //     console.log(error)
-  //   });
-  }
+      // ...
+    })
+    .catch( error => {
+      console.log(error)
+    });
 
-    
-    
-return (
+    return (
         <div>
 
 <section className="relative flex flex-wrap lg:h-screen lg:items-center">
@@ -49,7 +46,7 @@ return (
   <div className="hero-content flex-col lg:flex-row-reverse">
    
     <div className="card flex-shrink-0 w-full  lg:mx-36 lg:my-36 max-w-sm shadow-2xl bg-base-100">
-      <form className="card-body" onSubmit={handleLogin}>
+      <form className="card-body" onSubmit={}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>

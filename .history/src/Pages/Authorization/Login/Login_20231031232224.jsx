@@ -23,25 +23,22 @@ const handleLogin = event => {
   const form = event.target;
   const email = form.email.value;
   const password = form.password.value;
-  console.log(email, password);
+  console.log(email, password);}
   // loginUser(email,password)
   // .then( userCredential => {
-  //     // Signed in 
-  //     const loggedUser = userCredential.user;
-  //     console.log(loggedUser)
-  //     navigate(from, { replace: true });
-  //     Swal.fire('Login Succesful')
+      // Signed in 
+      // const loggedUser = userCredential.user;
+      // console.log(loggedUser)
+      // navigate(from, { replace: true });
+      // Swal.fire('Login Succesful')
       
-  //     // ...
-  //   })
-  //   .catch( error => {
-  //     console.log(error)
-  //   });
-  }
+      // ...
+    // })
+    // .catch( error => {
+    //   console.log(error)
+    // });
 
-    
-    
-return (
+    return (
         <div>
 
 <section className="relative flex flex-wrap lg:h-screen lg:items-center">
