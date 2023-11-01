@@ -9,4 +9,10 @@ import { router } from './Router/Router/Routes.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <A
     <div >
+      
+      <RouterProvider router={router} />
+     </div>
+  </React.StrictMode>,
+)
