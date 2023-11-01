@@ -9,7 +9,7 @@ const Signup = () => {
   const last_name = form.last_name.value;
   const email = form.email.value;
   const password = form.password.value;
-  console.log(first_name,last_name,email, password);
+  console.log(first_nameemail, password,);
   }
     return (
         <>
