@@ -1,16 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-
-  const handleSignup = (event)=>{
-    event.preventDefault();
-    const form = event.target;
-  const first_name = form.first_name.value;
-  const last_name = form.last_name.value;
-  const email = form.email.value;
-  const password = form.password.value;
-  console.log(email, password,last_name,first_name);
-  }
     return (
         <>
   
@@ -49,10 +39,10 @@ const Signup = () => {
         <h1
           className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
         >
-          Welcome to মিরপুরে  🦑
+          Welcome to Squid 🦑
         </h1>
 
-        <form onSubmit={handleSignup} action="#" className="mt-8 grid grid-cols-6 gap-6">
+        <form onSubmit={handleSig} action="#" className="mt-8 grid grid-cols-6 gap-6">
           <div className="col-span-6 sm:col-span-3">
             <label
               htmlFor="FirstName"

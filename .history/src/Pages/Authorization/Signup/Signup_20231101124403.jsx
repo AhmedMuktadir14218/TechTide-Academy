@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Signup = () => {
 
   const handleSignup = (event)=>{
-    event.preventDefault();
+    // event.preventDefault();
     const form = event.target;
   const first_name = form.first_name.value;
   const last_name = form.last_name.value;
