@@ -5,10 +5,7 @@ const AuthProvider = ({children}) => {
     const [user,setUser]=useState(null);
     const [loading,setLoading]=useState(null);
 
-    const authinfo = {
-        user,
-        loading
-    }
+    const
     return (
         <AuthContext.Provider  >
             {children}
