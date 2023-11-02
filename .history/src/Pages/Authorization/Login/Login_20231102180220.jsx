@@ -7,7 +7,7 @@ import { FaGooglePlusG,FaSquareFacebook } from "react-icons/fa6";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
-  const {user,loginUser,googleLoginUser}=useContext(AuthContext);
+  const {user,loginUser,signWithGoolgle}=useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -36,7 +36,7 @@ const handleLogin = event => {
 
 
   const handleGoogleLogin = ()=>{
-    googleLoginUser()
+    signWithGoolgle()
     .then( userCredential => {
         // Signed in 
         const loggedUser = userCredential.user;

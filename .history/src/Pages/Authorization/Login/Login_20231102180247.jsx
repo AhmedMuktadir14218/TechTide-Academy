@@ -36,7 +36,7 @@ const handleLogin = event => {
 
 
   const handleGoogleLogin = ()=>{
-    googleLoginUser()
+    signWithGoolgle()
     .then( userCredential => {
         // Signed in 
         const loggedUser = userCredential.user;
