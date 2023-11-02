@@ -16,15 +16,12 @@ const Signup = () => {
   createUser(email,password)
   .then((userCredential) => {
     // Signed up 
-    const logedUser = userCredential.user;
-
-    console.log(logedUser);
+    const user = userCredential.user;
     // ...
   })
   .catch((error) => {
-    console.log(error)
-    // const errorCode = error.code;
-    // const errorMessage = error.message;
+    const errorCode = error.code;
+    const errorMessage = error.message;
     // ..
   });
 

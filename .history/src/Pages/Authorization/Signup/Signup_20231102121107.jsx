@@ -14,21 +14,7 @@ const Signup = () => {
   const password = form.password.value;
   console.log(first_name,last_name,email, password);
   createUser(email,password)
-  .then((userCredential) => {
-    // Signed up 
-    const logedUser = userCredential.user;
-
-    console.log(logedUser);
-    // ...
-  })
-  .catch((error) => {
-    console.log(error)
-    // const errorCode = error.code;
-    // const errorMessage = error.message;
-    // ..
-  });
-
-
+  
   }
     return (
         <>

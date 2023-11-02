@@ -18,13 +18,12 @@ const Signup = () => {
     // Signed up 
     const logedUser = userCredential.user;
 
-    console.log(logedUser);
+    console.log(lo)
     // ...
   })
   .catch((error) => {
-    console.log(error)
-    // const errorCode = error.code;
-    // const errorMessage = error.message;
+    const errorCode = error.code;
+    const errorMessage = error.message;
     // ..
   });
 
