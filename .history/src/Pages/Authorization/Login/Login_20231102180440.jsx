@@ -102,7 +102,7 @@ return (
         
       </form>
       <p className="text-center text-lg
-      "><small>New Here? <Link to="/signup"><span className="font-bold text-primary">Create an account</span></Link> </small></p>
+      "><small>New Here? <Link to="/signup"><span></span></Link> </small></p>
     </div>
   </div>
 </div>

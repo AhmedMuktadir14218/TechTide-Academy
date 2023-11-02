@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider";
 
 const Signup = () => {
-  const {user,createUser}=useContext(AuthContext)
+  const {user,createUser,}=useContext(AuthContext)
 
   const handleSignup = (event)=>{
     event.preventDefault();
