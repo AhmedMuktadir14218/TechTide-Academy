@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../../Context/AuthProvider";
-import { FcGoogle } from "react-icons/fc";
+import { FaGooglePlusG,FaSquareFacebook } from "react-icons/fc";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
@@ -97,11 +97,11 @@ return (
           <button className="btn btn-primary">Login</button>
         </div >
         <div className="form-control mt-3">
-        <button className="btn" onClick={handleGoogleLogin}><FcGoogle></FcGoogle></button>
+        <button className="btn" onClick={handleGoogleLogin}><FaGooglePlusG></FaGooglePlusG></button>
         </div>
         
       </form>
-      <p className="mb-4 text-center text-lg
+      <p className="text-center text-lg
       "><small>New Here? <Link to="/signup"><span className="font-bold text-primary">Create an account</span></Link> </small></p>
     </div>
   </div>

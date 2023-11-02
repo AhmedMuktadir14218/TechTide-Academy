@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import iconimg from '../../../assets/mortarboard.png'
 import { useContext } from "react";
-import { AuthContext } from "../../../Context/AuthProvider";
 
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext);
@@ -44,8 +43,7 @@ const Navbar = () => {
  </ul>
 </div>
 <div className="navbar-end lg:mx-32 ">
- {/* <Link to='/login' className="btn btn-primary hover:bg-blue-600">Login</Link> */}
- {user ? <button onClick={handleLogout}>{user.displayName}</button> : <Link to='/login' className="btn btn-primary hover:bg-blue-600">Login</Link>}
+ <Link to='/login' className="btn btn-primary hover:bg-blue-600">Login</Link>
 </div>
 </div>
      </>

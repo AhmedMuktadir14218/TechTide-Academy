@@ -45,7 +45,7 @@ const Navbar = () => {
 </div>
 <div className="navbar-end lg:mx-32 ">
  {/* <Link to='/login' className="btn btn-primary hover:bg-blue-600">Login</Link> */}
- {user ? <button onClick={handleLogout}>{user.displayName}</button> : <Link to='/login' className="btn btn-primary hover:bg-blue-600">Login</Link>}
+ 
 </div>
 </div>
      </>
