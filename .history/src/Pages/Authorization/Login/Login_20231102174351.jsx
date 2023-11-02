@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../../Context/AuthProvider";
 
@@ -14,7 +14,19 @@ const Login = () => {
 
 
 
+  useEffect(() => {
+    loadCaptchaEnginge(4);
+}, [])
 
+const handleValidateCaptcha = (e) => {
+  const user_captcha_value = e.target.value;
+  if (validateCaptcha(user_captcha_value)) {
+      setDisabled(false);
+  }
+  else {
+      setDisabled(true)
+  }
+}
 const handleLogin = event => {
   event.preventDefault();
   const form = event.target;
@@ -36,21 +48,8 @@ const handleLogin = event => {
     });
   }
 
-//captcha start
-  useEffect(() => {
-    loadCaptchaEnginge(4);
-}, [])
-
-const handleValidateCaptcha = (e) => {
-  const user_captcha_value = e.target.value;
-  if (validateCaptcha(user_captcha_value)) {
-      setDisabled(false);
-  }
-  else {
-      setDisabled(true)
-  }
-}
-//captcha end
+    
+    
 return (
         <div>
 

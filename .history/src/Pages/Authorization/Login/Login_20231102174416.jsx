@@ -36,7 +36,7 @@ const handleLogin = event => {
     });
   }
 
-//captcha start
+//
   useEffect(() => {
     loadCaptchaEnginge(4);
 }, [])
@@ -50,7 +50,7 @@ const handleValidateCaptcha = (e) => {
       setDisabled(true)
   }
 }
-//captcha end
+    
 return (
         <div>
 

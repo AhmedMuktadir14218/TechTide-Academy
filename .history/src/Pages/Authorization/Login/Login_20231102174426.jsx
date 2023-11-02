@@ -50,7 +50,7 @@ const handleValidateCaptcha = (e) => {
       setDisabled(true)
   }
 }
-//captcha end
+    
 return (
         <div>
 

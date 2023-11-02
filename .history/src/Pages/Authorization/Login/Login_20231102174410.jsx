@@ -36,21 +36,9 @@ const handleLogin = event => {
     });
   }
 
-//captcha start
-  useEffect(() => {
-    loadCaptchaEnginge(4);
-}, [])
 
-const handleValidateCaptcha = (e) => {
-  const user_captcha_value = e.target.value;
-  if (validateCaptcha(user_captcha_value)) {
-      setDisabled(false);
-  }
-  else {
-      setDisabled(true)
-  }
-}
-//captcha end
+  
+    
 return (
         <div>
 
