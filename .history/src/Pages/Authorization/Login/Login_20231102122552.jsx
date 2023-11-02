@@ -1,12 +1,9 @@
-import { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
-import { AuthContext } from "../../../Context/AuthProvider";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
-  const {user,loginUser}=useContext(AuthContext)
 
   useEffect(() => {
     loadCaptchaEnginge(4);
@@ -27,19 +24,19 @@ const handleLogin = event => {
   const email = form.email.value;
   const password = form.password.value;
   console.log(email, password);
-  loginUser(email,password)
-  .then( userCredential => {
-      // Signed in 
-      const loggedUser = userCredential.user;
-      console.log(loggedUser)
-      navigate(from, { replace: true });
-      // Swal.fire('Login Succesful')
+  // loginUser(email,password)
+  // .then( userCredential => {
+  //     // Signed in 
+  //     const loggedUser = userCredential.user;
+  //     console.log(loggedUser)
+  //     navigate(from, { replace: true });
+  //     Swal.fire('Login Succesful')
       
-      // ...
-    })
-    .catch( error => {
-      console.log(error)
-    });
+  //     // ...
+  //   })
+  //   .catch( error => {
+  //     console.log(error)
+  //   });
   }
 
     
@@ -74,7 +71,7 @@ return (
 
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button class Name="btn btn-primary">Login</button>
         </div>
       </form>
       <p className="text-center"><small>New Here? <Link to="/signup">Create an account</Link> </small></p>

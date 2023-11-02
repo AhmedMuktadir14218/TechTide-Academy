@@ -28,18 +28,18 @@ const handleLogin = event => {
   const password = form.password.value;
   console.log(email, password);
   loginUser(email,password)
-  .then( userCredential => {
-      // Signed in 
-      const loggedUser = userCredential.user;
-      console.log(loggedUser)
-      navigate(from, { replace: true });
-      // Swal.fire('Login Succesful')
+  // .then( userCredential => {
+  //     // Signed in 
+  //     const loggedUser = userCredential.user;
+  //     console.log(loggedUser)
+  //     navigate(from, { replace: true });
+  //     Swal.fire('Login Succesful')
       
-      // ...
-    })
-    .catch( error => {
-      console.log(error)
-    });
+  //     // ...
+  //   })
+  //   .catch( error => {
+  //     console.log(error)
+  //   });
   }
 
     

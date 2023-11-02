@@ -1,12 +1,10 @@
-import { useContext } from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
-import { AuthContext } from "../../../Context/AuthProvider";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
-  const {user,loginUser}=useContext(AuthContext)
+  const {user,loggedUser}={}
 
   useEffect(() => {
     loadCaptchaEnginge(4);
@@ -27,19 +25,19 @@ const handleLogin = event => {
   const email = form.email.value;
   const password = form.password.value;
   console.log(email, password);
-  loginUser(email,password)
-  .then( userCredential => {
-      // Signed in 
-      const loggedUser = userCredential.user;
-      console.log(loggedUser)
-      navigate(from, { replace: true });
-      // Swal.fire('Login Succesful')
+  // loginUser(email,password)
+  // .then( userCredential => {
+  //     // Signed in 
+  //     const loggedUser = userCredential.user;
+  //     console.log(loggedUser)
+  //     navigate(from, { replace: true });
+  //     Swal.fire('Login Succesful')
       
-      // ...
-    })
-    .catch( error => {
-      console.log(error)
-    });
+  //     // ...
+  //   })
+  //   .catch( error => {
+  //     console.log(error)
+  //   });
   }
 
     
