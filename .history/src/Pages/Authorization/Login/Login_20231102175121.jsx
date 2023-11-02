@@ -80,11 +80,8 @@ return (
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
-        </div >
-        <div className="form-control mt-3">
-        <button className="btn"><FaGooglePlusG></FaGooglePlusG></button>
+          <button className="btn btn-primary">Login</button>
         </div>
-        
       </form>
       <p className="text-center"><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
     </div>

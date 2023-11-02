@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../../Context/AuthProvider";
-import { FaGooglePlusG,FaSquareFacebook } from "react-icons/fa6";
+import { FaGooglePlusG } from "react-icons/fa6";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(true);
@@ -12,6 +12,9 @@ const Login = () => {
   const location = useLocation();
 
   const from = location.state?.from?.pathname || "/";
+
+
+
 
 const handleLogin = event => {
   event.preventDefault();
@@ -80,11 +83,7 @@ return (
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
-        </div >
-        <div className="form-control mt-3">
-        <button className="btn"><FaGooglePlusG></FaGooglePlusG></button>
         </div>
-        
       </form>
       <p className="text-center"><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
     </div>

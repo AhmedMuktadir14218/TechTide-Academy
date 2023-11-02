@@ -82,7 +82,7 @@ return (
           <button className="btn btn-primary">Login</button>
         </div >
         <div className="form-control mt-3">
-        <button className="btn"><FaGooglePlusG></FaGooglePlusG></button>
+        <button className="btn "><h3><FaGooglePlusG></FaGooglePlusG></h3></button>
         </div>
         
       </form>
