@@ -61,9 +61,9 @@ const Banner = () => {
   > */}
 
   <div
-    className="relative mx-auto lg:mx-14 xl:mx-14 max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+    className="relative mx-auto lg max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
   >
-    <div className="max-w-xl md:mx-14  text-start ltr:sm:text-left rtl:sm:text-right">
+    <div className="max-w-xl md:mx-14 lg: text-start ltr:sm:text-left rtl:sm:text-right">
       <h1 className="text-2xl font-extrabold sm:text-5xl text-white">
       WELCOME TO 
 
