@@ -9,7 +9,6 @@ import Price from "../../Pages/Price/Price";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import Login from "../../Pages/Authorization/Login/Login";
 import Signup from "../../Pages/Authorization/Signup/Signup";
-import CourseDetails from "../../Pages/Courses/CourseDetails";
 // import About from "../../Component/about/About";
 
 export const router = createBrowserRouter([
@@ -29,9 +28,8 @@ export const router = createBrowserRouter([
     },
     {
       
-      path:'/courses:courseid',
-      element:<CourseDetails></CourseDetails>
-      
+      path:'/courses:course',
+      element:<Courses></Courses>
     },
     {
       
