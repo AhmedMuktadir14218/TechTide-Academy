@@ -14,7 +14,7 @@ const CourseDetails = () => {
     console.log(course._id)
     return (
         <div>
-          <h1>{course._id}</h1>
+          <h1>{course.id}</h1>
 
         </div>
     );

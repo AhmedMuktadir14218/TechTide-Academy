@@ -1,6 +1,7 @@
 import CourseList from "./CourseList";
 import CoursesBanner from "../../Component/CoursesBanner/CoursesBanner";
 import useCourse from "../../Hooks/useCourse";
+import CourseDetails from "./CourseDetails";
 
 const Courses = () => {
     const [course]=useCourse()
@@ -14,6 +15,10 @@ const Courses = () => {
                     >
 
                     </CourseList>)
+                }
+                {
+                    course &&
+                    <CourseDetails course={course}  ></CourseDetails>
                 }
                 </div>
         </>

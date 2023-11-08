@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CourseList = ({courses}) => {
     const {_id, cover, coursesName,  pricePer } = courses;
-    
+    console.log(_id)
     return (
       <div >
          <div className="card w-70 h-85  shadow-xl grid gap-0 grid-cols-2 bg-primary  hover:bg-info">

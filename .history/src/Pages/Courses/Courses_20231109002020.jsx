@@ -1,8 +1,10 @@
 import CourseList from "./CourseList";
 import CoursesBanner from "../../Component/CoursesBanner/CoursesBanner";
 import useCourse from "../../Hooks/useCourse";
+import CourseDetails from "./CourseDetails";
 
 const Courses = () => {
+    const [service, setService] = useState(null);
     const [course]=useCourse()
     return (
         <>
@@ -14,6 +16,10 @@ const Courses = () => {
                     >
 
                     </CourseList>)
+                }
+                {
+                    course &&
+                    <CourseDetails course={course}  ></CourseDetails>
                 }
                 </div>
         </>

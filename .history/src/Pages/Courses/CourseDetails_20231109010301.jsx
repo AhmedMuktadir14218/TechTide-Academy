@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
 
 const CourseDetails = () => {
@@ -6,7 +5,7 @@ const CourseDetails = () => {
     const { _id } = useParams();
     console.log(course)
     
-    const selectedCourse = course?.courses.find(course => course._id === parseInt(_id));
+    const selectedCourse = course?.courses.find(course => course.+id === parseInt(id));
 
     if (!selectedCourse) {
       return <div>Loading...</div>; // Handle loading state or error
@@ -14,7 +13,7 @@ const CourseDetails = () => {
     console.log(course._id)
     return (
         <div>
-          <h1>{course._id}</h1>
+          <h1>{course.coursesName}</h1>
 
         </div>
     );

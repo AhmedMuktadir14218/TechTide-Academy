@@ -6,15 +6,15 @@ const CourseDetails = () => {
     const { _id } = useParams();
     console.log(course)
     
-    const selectedCourse = course?.courses.find(course => course._id === parseInt(_id));
+    const selectedCourse = course?.courses.find(course => course.id === parseInt(_id));
 
     if (!selectedCourse) {
       return <div>Loading...</div>; // Handle loading state or error
     }
-    console.log(course._id)
+    console.log(course.id)
     return (
         <div>
-          <h1>{course._id}</h1>
+          <h1>{course.id}</h1>
 
         </div>
     );

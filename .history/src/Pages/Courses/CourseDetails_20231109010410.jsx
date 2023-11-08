@@ -11,10 +11,10 @@ const CourseDetails = () => {
     if (!selectedCourse) {
       return <div>Loading...</div>; // Handle loading state or error
     }
-    console.log(course._id)
+    console.log(course.id)
     return (
         <div>
-          <h1>{course._id}</h1>
+          <h1>{course.id}</h1>
 
         </div>
     );
