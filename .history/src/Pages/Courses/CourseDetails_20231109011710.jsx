@@ -8,15 +8,7 @@ const CourseDetails = () => {
         <div>
             {/* <h1>{_id}</h1> */}
             <h1>{course.length}</h1>
-            <ul>
-                {
-                    course.map(option => <li
-                        key={option._id} 
-                    >
-                        <h2 >{option.coursesName}</h2>
-                    </li>)
-                }
-                </ul>
+            
         </div>
     );
 };

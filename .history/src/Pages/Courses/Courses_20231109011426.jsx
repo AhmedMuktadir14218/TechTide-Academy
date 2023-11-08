@@ -15,8 +15,6 @@ const Courses = () => {
 
                     </CourseList>)
                 }
-               
-                
                 </div>
         </>
     );

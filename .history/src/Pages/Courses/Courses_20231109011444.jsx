@@ -15,7 +15,7 @@ const Courses = () => {
 
                     </CourseList>)
                 }
-               
+                <ul></ul>
                 
                 </div>
         </>

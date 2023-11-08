@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CourseList = ({courses}) => {
-    const { _id , cover , coursesName ,  pricePer } = courses;
+    const {_id, cover, coursesName ,  pricePer } = courses;
     
     return (
       <div >

@@ -15,8 +15,14 @@ const Courses = () => {
 
                     </CourseList>)
                 }
-               
                 
+                {
+                    course.map(option => <CourseList
+                        key={option._id} courses={option} 
+                    >
+
+                    </CourseList>)
+                }
                 </div>
         </>
     );
