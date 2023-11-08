@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CourseList = ({courses}) => {
-    const {_id, cover, coursesName,  pricePer } = courses;
+    const {id, cover, coursesName,  pricePer } = courses;
     
     return (
       <div >
@@ -15,7 +15,7 @@ const CourseList = ({courses}) => {
     <h2 className="card-title">{coursesName}</h2>
     <p>{pricePer}</p>
     <div className="card-actions">
-      <button className="btn btn-neutral "><Link to={`/courses:${_id}`}>See More</Link></button>
+      <button className="btn btn-neutral "><Link to={`/courses:courseid`}>See More</Link></button>
     </div>
   </div>
 </div>
