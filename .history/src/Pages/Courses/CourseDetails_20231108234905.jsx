@@ -1,12 +1,12 @@
 import useCourse from "../../Hooks/useCourse";
 
-const CourseDetails = () => {
+const CourseDetails = ({CourseDetails}) => {
     const [course]=useCourse()
 
-    const {_id, cover, coursesName,  pricePer } = course;
+    const {_id, cover, coursesName,  pricePer } = courses;
     return (
         <div>
-            <h1>{coursesName}</h1>
+            
         </div>
     );
 };

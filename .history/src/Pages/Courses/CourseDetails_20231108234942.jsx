@@ -6,7 +6,7 @@ const CourseDetails = () => {
     const {_id, cover, coursesName,  pricePer } = course;
     return (
         <div>
-            <h1>{coursesName}</h1>
+            <h1>{cou}</h1>
         </div>
     );
 };

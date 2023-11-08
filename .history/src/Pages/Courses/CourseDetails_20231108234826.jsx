@@ -1,0 +1,11 @@
+
+const CourseDetails = ({CourseDetails}) => {
+    const [course]=useCourse()
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default CourseDetails;
