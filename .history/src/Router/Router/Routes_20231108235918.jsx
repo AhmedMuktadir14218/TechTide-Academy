@@ -1,4 +1,4 @@
-import { createBrowserRouter,useLoaderData } from "react-router-dom";
+import { createBrowserRouter, } from "react-router-dom";
 import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Layout/Main";
 import Courses from "../../Pages/Courses/Courses";
@@ -29,9 +29,9 @@ export const router = createBrowserRouter([
     },
     {
       
-      path:'/courses/:courseid',
+      path:'/courses:courseid',
       element:<CourseDetails></CourseDetails>
-      
+      loader=
     },
     {
       

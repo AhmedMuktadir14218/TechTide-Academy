@@ -3,7 +3,7 @@ import useCourse from "../../Hooks/useCourse";
 const CourseDetails = ({courses}) => {
     const [course]=useCourse()
     console.log(course)
-    const {_id, cover, coursesName,  pricePer } = course;
+    const {_id, cover, coursesName,  pricePer } = courses;
     return (
         <div>
             <h1>hello {coursesName}</h1>

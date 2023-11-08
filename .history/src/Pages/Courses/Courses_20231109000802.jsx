@@ -16,6 +16,13 @@ const Courses = () => {
 
                     </CourseList>)
                 }
+                {
+                    course.map(option => <CourseDetails
+                        key={option._id} courses={option} 
+                    >
+
+                    </Cour>)
+                }
                 </div>
         </>
     );

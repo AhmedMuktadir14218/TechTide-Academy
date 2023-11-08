@@ -1,12 +1,12 @@
 import useCourse from "../../Hooks/useCourse";
 
-const CourseDetails = ({courses}) => {
+const CourseDetails = () => {
     const [course]=useCourse()
-    console.log(course)
+    console.log()
     const {_id, cover, coursesName,  pricePer } = course;
     return (
         <div>
-            <h1>hello {coursesName}</h1>
+            <h1>{coursesName}</h1>
         </div>
     );
 };
