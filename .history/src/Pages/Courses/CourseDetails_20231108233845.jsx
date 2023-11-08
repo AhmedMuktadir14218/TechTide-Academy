@@ -1,5 +1,5 @@
 
-const CourseDetails = ({CourseDetails}) => {
+const CourseDetails = ({course}) => {
     return (
         <div>
             
