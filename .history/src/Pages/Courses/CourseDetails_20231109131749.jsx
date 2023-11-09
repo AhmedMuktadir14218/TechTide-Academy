@@ -1,11 +1,9 @@
-import { useParams } from "react-router-dom";
+import useCourse from "../../Hooks/useCourse";
 
-const CourseDetails = () => {
+const CourseDetails = ({children}) => {
     // const [course]=useCourse()
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
-    const { coursesName }=useParams()
-    console.log(coursesName)
     return (
         <div>
             {/* <h1>{_id}</h1> */}
@@ -19,7 +17,6 @@ const CourseDetails = () => {
                     </li>)
                 }
                 </ul> */}
-                {/* {courseName} */}
         </div>
     );
 };

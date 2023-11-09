@@ -19,7 +19,7 @@ const CourseDetails = () => {
                     </li>)
                 }
                 </ul> */}
-                {/* {courseName} */}
+                {courseName}
         </div>
     );
 };

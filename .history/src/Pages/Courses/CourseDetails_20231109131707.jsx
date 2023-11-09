@@ -1,15 +1,13 @@
-import { useParams } from "react-router-dom";
+import useCourse from "../../Hooks/useCourse";
 
-const CourseDetails = () => {
+const CourseDetails = ({childre}) => {
     // const [course]=useCourse()
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
-    const { coursesName }=useParams()
-    console.log(coursesName)
     return (
         <div>
             {/* <h1>{_id}</h1> */}
-            {/* <h1>{course.length}</h1>
+            <h1>{course.length}</h1>
             <ul>
                 {
                     course.map(option => <li
@@ -18,8 +16,7 @@ const CourseDetails = () => {
                         <h2 >{option.coursesName}</h2>
                     </li>)
                 }
-                </ul> */}
-                {/* {courseName} */}
+                </ul>
         </div>
     );
 };

@@ -5,7 +5,7 @@ const CourseDetails = () => {
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
     const { coursesName }=useParams()
-    console.log(coursesName)
+    console.log(_id)
     return (
         <div>
             {/* <h1>{_id}</h1> */}
