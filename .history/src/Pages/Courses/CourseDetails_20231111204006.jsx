@@ -10,7 +10,7 @@ const CourseDetails = () => {
 
     useEffect(()=>{
         const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
-        setServiceData(courseData)
+        setServiceData()
     },[])
     const { coursesID }=useParams()
     console.log(coursesID)
