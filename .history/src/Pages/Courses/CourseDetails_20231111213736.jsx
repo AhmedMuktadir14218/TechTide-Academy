@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const CourseDetails = () => {
     // const [course]=useCourse()
@@ -36,7 +37,7 @@ const CourseDetails = () => {
 //   }
     return (
         <div>
-            {/* {coursesID} */}
+            {coursesID}
             <p>{newcourse._id}</p>
             {/* <div className="grid md:grid-cols-2 gap-10">
                 <ul>{

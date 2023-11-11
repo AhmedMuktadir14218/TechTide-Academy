@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const CourseDetails = () => {
-    // const [course]=useCourse()
+    const [course]=useCourse()
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
     // const {serviceData,setServiceData} = useState("");
@@ -16,28 +17,25 @@ const CourseDetails = () => {
     console.log(coursesID)
     
 //   const popular =course.filter(item => item._id === coursesID)
-//   console.log(course.coursesName)
-  const [newcourse, setnewCourse] = useState([]);
+  console.log(course.coursesName)
+  const [newcourse, setnewCourse] = useState(null);
 
   useEffect(() => {
-    fetch('https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7')
-      .then(response => response.json())
-      .then(data => {
-        const course = data.newcourse.find(course => course._id === coursesID);
-        setnewCourse(course);
+    axios.get(`https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7/courses/${coursesID}`)
+      .then(response => {
+        setnewCourse(response.data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
   }, [coursesID]);
 
-//   if (!newcourse) {
-//     return <div>Loading...</div>;
-//   }
+  if (!newcourse) {
+    return <div>Loading...</div>;
+  }
     return (
         <div>
-            {/* {coursesID} */}
-            <p>{newcourse._id}</p>
+            {coursesID}
             {/* <div className="grid md:grid-cols-2 gap-10">
                 <ul>{
                     course.map(item => <li

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const CourseDetails = () => {
     // const [course]=useCourse()
@@ -17,13 +18,13 @@ const CourseDetails = () => {
     
 //   const popular =course.filter(item => item._id === coursesID)
 //   console.log(course.coursesName)
-  const [newcourse, setnewCourse] = useState([]);
+  const [newcourse, setnewCourse] = useState(null);
 
   useEffect(() => {
     fetch('https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7')
       .then(response => response.json())
       .then(data => {
-        const course = data.newcourse.find(course => course._id === coursesID);
+        const course = data.courses.find(course => course._id === coursesID);
         setnewCourse(course);
       })
       .catch(error => {
@@ -36,8 +37,8 @@ const CourseDetails = () => {
 //   }
     return (
         <div>
-            {/* {coursesID} */}
-            <p>{newcourse._id}</p>
+            {coursesID}
+            {newcourse.coursesName}
             {/* <div className="grid md:grid-cols-2 gap-10">
                 <ul>{
                     course.map(item => <li

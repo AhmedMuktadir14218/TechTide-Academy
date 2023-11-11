@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const CourseDetails = () => {
     // const [course]=useCourse()
