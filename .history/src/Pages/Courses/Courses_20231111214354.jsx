@@ -4,8 +4,8 @@ import useCourse from "../../Hooks/useCourse";
 
 const Courses = () => {
     const [course]=useCourse()
-    // const Finder =  course.find(course => course._id === 5);
-    //     console.log(Finder)
+    const Finder = data.newcourse.find(course => course._id === 5);
+        console.log(Finder)
     return (
         <>
         <CoursesBanner></CoursesBanner>

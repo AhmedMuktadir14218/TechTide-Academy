@@ -43,7 +43,7 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             <p>{newcourse._id}</p>
-            
+            /}
             <p>{newcourse.coursesName}</p>
         </div>
     );

@@ -22,19 +22,18 @@ const CourseDetails = () => {
   useEffect(() => {
     fetch('https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7')
       .then(response => response.json())
-      .then(data => {
-        const foundCourse = data.newcourse.find(course => course.id === coursesID);
+      const foundCourse = data.newcourse.find(course => course.id === id);
 
-        if (foundCourse) {
-            setnewCourse(foundCourse);
-        } else {
-          console.error(`Course with id ${coursesID} not found`);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, [coursesID]);
+      if (foundCourse) {
+        setCourse(foundCourse);
+      } else {
+        console.error(`Course with id ${id} not found`);
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+}, [id]);
 
 //   if (!newcourse) {
 //     return <div>Loading...</div>;
@@ -43,8 +42,16 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             <p>{newcourse._id}</p>
-            
-            <p>{newcourse.coursesName}</p>
+            {/* <div className="grid md:grid-cols-2 gap-10">
+                <ul>{
+                    course.map(item => <li
+                        key={item._id}
+                    >
+                        {item.coursesName}
+                    </li>)
+                }</ul>
+            </div> */}
+            {/* {serviceData} */}
         </div>
     );
 };

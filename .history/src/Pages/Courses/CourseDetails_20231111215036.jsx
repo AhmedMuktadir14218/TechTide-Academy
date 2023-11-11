@@ -43,8 +43,18 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             <p>{newcourse._id}</p>
-            
-            <p>{newcourse.coursesName}</p>
+            <p>{newcourse.cover}</p>
+            <p>{newcourse.cover}</p>
+            {/* <div className="grid md:grid-cols-2 gap-10">
+                <ul>{
+                    course.map(item => <li
+                        key={item._id}
+                    >
+                        {item.coursesName}
+                    </li>)
+                }</ul>
+            </div> */}
+            {/* {serviceData} */}
         </div>
     );
 };

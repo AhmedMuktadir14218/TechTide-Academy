@@ -23,14 +23,10 @@ const CourseDetails = () => {
     fetch('https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7')
       .then(response => response.json())
       .then(data => {
-        const foundCourse = data.newcourse.find(course => course.id === coursesID);
-
-        if (foundCourse) {
-            setnewCourse(foundCourse);
-        } else {
-          console.error(`Course with id ${coursesID} not found`);
-        }
+        const course = data.newcourse.find(course => course._id === coursesID);
+        setnewCourse(course);
       })
+      console.log()
       .catch(error => {
         console.error('Error fetching data:', error);
       });
@@ -43,8 +39,16 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             <p>{newcourse._id}</p>
-            
-            <p>{newcourse.coursesName}</p>
+            {/* <div className="grid md:grid-cols-2 gap-10">
+                <ul>{
+                    course.map(item => <li
+                        key={item._id}
+                    >
+                        {item.coursesName}
+                    </li>)
+                }</ul>
+            </div> */}
+            {/* {serviceData} */}
         </div>
     );
 };

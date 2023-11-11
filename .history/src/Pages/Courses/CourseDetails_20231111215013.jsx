@@ -26,7 +26,7 @@ const CourseDetails = () => {
         const foundCourse = data.newcourse.find(course => course.id === coursesID);
 
         if (foundCourse) {
-            setnewCourse(foundCourse);
+          setnewCourse(foundCourse);
         } else {
           console.error(`Course with id ${coursesID} not found`);
         }
@@ -43,8 +43,16 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             <p>{newcourse._id}</p>
-            
-            <p>{newcourse.coursesName}</p>
+            {/* <div className="grid md:grid-cols-2 gap-10">
+                <ul>{
+                    course.map(item => <li
+                        key={item._id}
+                    >
+                        {item.coursesName}
+                    </li>)
+                }</ul>
+            </div> */}
+            {/* {serviceData} */}
         </div>
     );
 };
