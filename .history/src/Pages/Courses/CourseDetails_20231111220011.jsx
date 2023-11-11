@@ -14,9 +14,9 @@ const CourseDetails = () => {
     // },[])
     const { coursesID }=useParams()
     const intId =parseInt(coursesID)
-    console.log(typeof(intId))
+    console.log(typeof(coursesID))
 
-       const Finder =  course.find(course => course._id === intId);
+       const Finder =  course.find(course => course._id === coursesID);
         console.log(Finder)
     
 //   const popular =course.filter(item => item._id === coursesID)

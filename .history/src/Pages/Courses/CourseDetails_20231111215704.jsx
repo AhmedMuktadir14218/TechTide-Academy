@@ -13,10 +13,9 @@ const CourseDetails = () => {
     //     setServiceData(courseData[0].coursesName)
     // },[])
     const { coursesID }=useParams()
-    const intId =parseInt(coursesID)
-    console.log(typeof(intId))
+    console.log(coursesID)
 
-       const Finder =  course.find(course => course._id === intId);
+       const Finder =  course.find(course => course._id === 5);
         console.log(Finder)
     
 //   const popular =course.filter(item => item._id === coursesID)

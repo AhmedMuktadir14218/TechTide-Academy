@@ -13,11 +13,7 @@ const CourseDetails = () => {
     //     setServiceData(courseData[0].coursesName)
     // },[])
     const { coursesID }=useParams()
-    const intId =parseInt(coursesID)
-    console.log(typeof(intId))
-
-       const Finder =  course.find(course => course._id === intId);
-        console.log(Finder)
+    console.log(coursesID)
     
 //   const popular =course.filter(item => item._id === coursesID)
 //   console.log(course.coursesName)
@@ -46,10 +42,10 @@ const CourseDetails = () => {
 
     return (
         <div>
-            {coursesID}
-            {/* <p>{newcourse._id}</p> */}
+            {/* {coursesID} */}
+            <p>{newcourse._id}</p>
             
-            {/* <p>{newcourse.coursesName}</p> */}
+            <p>{newcourse.coursesName}</p>
         </div>
     );
 };
