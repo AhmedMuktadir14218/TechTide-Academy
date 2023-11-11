@@ -8,10 +8,7 @@ const CourseDetails = () => {
     // const {_id, cover, coursesName,  pricePer } = course;
     const {serviceData,setServiceData} = useState("");
 
-    useEffect(()=>{
-        const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
-         
-    },[])
+    useEffect()
     const { coursesID }=useParams()
     console.log(coursesID)
     return (

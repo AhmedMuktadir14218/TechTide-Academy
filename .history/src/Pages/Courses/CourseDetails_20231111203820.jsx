@@ -9,7 +9,7 @@ const CourseDetails = () => {
     const {serviceData,setServiceData} = useState("");
 
     useEffect(()=>{
-        const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
+         const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
          
     },[])
     const { coursesID }=useParams()

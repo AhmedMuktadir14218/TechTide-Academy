@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const CourseDetails = () => {
     const [course]=useCourse()
@@ -8,10 +8,7 @@ const CourseDetails = () => {
     // const {_id, cover, coursesName,  pricePer } = course;
     const {serviceData,setServiceData} = useState("");
 
-    useEffect(()=>{
-        const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
-         
-    },[])
+    useE
     const { coursesID }=useParams()
     console.log(coursesID)
     return (
