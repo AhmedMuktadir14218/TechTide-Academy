@@ -4,11 +4,11 @@ const CourseDetails = () => {
     // const [course]=useCourse()
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
-    const { coursesID }=useParams()
-    console.log(coursesID)
+    const { coursesName }=useParams()
+    console.log(coursesName)
     return (
         <div>
-            {coursesID}
+            {}
         </div>
     );
 };

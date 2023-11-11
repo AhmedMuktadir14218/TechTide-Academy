@@ -5,10 +5,10 @@ const CourseDetails = () => {
     // console.log(course)
     // const {_id, cover, coursesName,  pricePer } = course;
     const { coursesID }=useParams()
-    console.log(coursesID)
+    console.log(coursesName)
     return (
         <div>
-            {coursesID}
+            {coursesName}
         </div>
     );
 };

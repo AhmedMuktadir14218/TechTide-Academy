@@ -8,7 +8,7 @@ const CourseDetails = () => {
     console.log(coursesID)
     return (
         <div>
-            {coursesID}
+            {coursesName}
         </div>
     );
 };
