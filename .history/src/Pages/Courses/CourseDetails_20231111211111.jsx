@@ -15,7 +15,7 @@ const CourseDetails = () => {
     const { coursesID }=useParams()
     console.log(coursesID)
     
-//   const popular =course.filter(item => item._id === coursesID)
+  const popular =course.filter(item => item._id === coursesID)
   console.log(course.coursesName)
     return (
         <div>

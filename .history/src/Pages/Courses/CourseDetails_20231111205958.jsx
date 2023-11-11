@@ -14,22 +14,10 @@ const CourseDetails = () => {
     // },[])
     const { coursesID }=useParams()
     console.log(coursesID)
-    
-//   const popular =course.filter(item => item._id === coursesID)
-  console.log(course.coursesName)
     return (
         <div>
             {coursesID}
-            <div className="grid md:grid-cols-2 gap-10">
-                <ul>{
-                    course.map(item => <li
-                        key={item._id}
-                    >
-                        {item.coursesName}
-                    </li>)
-                }</ul>
-            </div>
-            {/* {serviceData} */}
+            {serviceData}
         </div>
     );
 };
