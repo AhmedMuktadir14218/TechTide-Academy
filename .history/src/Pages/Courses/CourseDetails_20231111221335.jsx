@@ -6,15 +6,12 @@ const CourseDetails = () => {
     const [course]=useCourse()
     const { coursesID }=useParams()
     const intId =parseInt(coursesID)
-    // console.log(typeof(intId))
+    console.log(typeof(intId))
 
        const Finder =  course.find(course => course._id === intId);
         console.log(Finder)
-       const Filltered =  course.filter(course => course._id === intId);
-        console.log(Filltered)
-
     // console.log(course)
-    const {_id, cover, coursesName,  pricePer } = Finder;
+    // const {_id, cover, coursesName,  pricePer } = course;
     // const {serviceData,setServiceData} = useState("");
 
     // useEffect(()=>{
@@ -53,9 +50,8 @@ const CourseDetails = () => {
 
     return (
         <div>
-            {/* {coursesID} */}
+            {coursesID}
             {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
             
             {/* <p>{serviceData.slice(0,5)}</p> */}
         </div>

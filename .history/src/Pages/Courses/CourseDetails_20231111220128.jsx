@@ -4,27 +4,20 @@ import { useEffect, useState } from "react";
 
 const CourseDetails = () => {
     const [course]=useCourse()
-    const { coursesID }=useParams()
-    const intId =parseInt(coursesID)
-    // console.log(typeof(intId))
-
-       const Finder =  course.find(course => course._id === intId);
-        console.log(Finder)
-       const Filltered =  course.filter(course => course._id === intId);
-        console.log(Filltered)
-
     // console.log(course)
-    const {_id, cover, coursesName,  pricePer } = Finder;
+    // const {_id, cover, coursesName,  pricePer } = course;
     // const {serviceData,setServiceData} = useState("");
 
     // useEffect(()=>{
-    //     const courseData = course.filter((courseDetailsData) => courseDetailsData._id === intId);
-    //     console.log(courseData)
-    //     const Finder =  course.find(course => course._id === intId);
-    //     console.log(Finder)
-    //     setServiceData(Finder[0].coursesName)
+    //     const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
+    //     setServiceData(courseData[0].coursesName)
     // },[])
-   
+    const { coursesID }=useParams()
+    const intId =parseInt(coursesID)
+    console.log(typeof(intId))
+
+       const Finder =  course.find(course => course._id === intId);
+        console.log(Finder)
     
 //   const popular =course.filter(item => item._id === coursesID)
 //   console.log(course.coursesName)
@@ -34,18 +27,18 @@ const CourseDetails = () => {
 //     fetch('https://mocki.io/v1/83e1044d-1c1f-482b-b6f7-4aed8dceecd7')
 //       .then(response => response.json())
 //       .then(data => {
-//         const foundCourse = data.newcourse.find(course => course._id === intId);
+//         const foundCourse = data.newcourse.find(course => course.id === coursesID);
 
 //         if (foundCourse) {
 //             setnewCourse(foundCourse);
 //         } else {
-//           console.error(`Course with id ${intId} not found`);
+//           console.error(`Course with id ${coursesID} not found`);
 //         }
 //       })
 //       .catch(error => {
 //         console.error('Error fetching data:', error);
 //       });
-//   }, [intId]);
+//   }, [coursesID]);
 
 //   if (!newcourse) {
 //     return <div>Loading...</div>;
@@ -53,11 +46,10 @@ const CourseDetails = () => {
 
     return (
         <div>
-            {/* {coursesID} */}
-            {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
+            {coursesID}
+            {/* <p>{newcourse._id}</p> */}
             
-            {/* <p>{serviceData.slice(0,5)}</p> */}
+            <p>{Finder.coursesName}</p>
         </div>
     );
 };

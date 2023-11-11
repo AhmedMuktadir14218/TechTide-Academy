@@ -55,7 +55,7 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
+            <p>{Filltered.coursesName}</p>
             
             {/* <p>{serviceData.slice(0,5)}</p> */}
         </div>

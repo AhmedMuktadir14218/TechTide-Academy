@@ -4,27 +4,20 @@ import { useEffect, useState } from "react";
 
 const CourseDetails = () => {
     const [course]=useCourse()
+    // console.log(course)
+    // const {_id, cover, coursesName,  pricePer } = course;
+    const {serviceData,setServiceData} = useState("");
+
+    useEffect(()=>{
+        const courseData = course.filter((courseDetailsData) => courseDetailsData.coursesID === coursesID);
+        setServiceData(courseData[0].coursesName)
+    },[])
     const { coursesID }=useParams()
     const intId =parseInt(coursesID)
-    // console.log(typeof(intId))
+    console.log(typeof(intId))
 
        const Finder =  course.find(course => course._id === intId);
         console.log(Finder)
-       const Filltered =  course.filter(course => course._id === intId);
-        console.log(Filltered)
-
-    // console.log(course)
-    const {_id, cover, coursesName,  pricePer } = Finder;
-    // const {serviceData,setServiceData} = useState("");
-
-    // useEffect(()=>{
-    //     const courseData = course.filter((courseDetailsData) => courseDetailsData._id === intId);
-    //     console.log(courseData)
-    //     const Finder =  course.find(course => course._id === intId);
-    //     console.log(Finder)
-    //     setServiceData(Finder[0].coursesName)
-    // },[])
-   
     
 //   const popular =course.filter(item => item._id === coursesID)
 //   console.log(course.coursesName)
@@ -53,11 +46,10 @@ const CourseDetails = () => {
 
     return (
         <div>
-            {/* {coursesID} */}
-            {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
+            {coursesID}
+            <p>{serviceData._id}</p>
             
-            {/* <p>{serviceData.slice(0,5)}</p> */}
+            <p>{newcourse.coursesName}</p>
         </div>
     );
 };

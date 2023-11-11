@@ -14,7 +14,7 @@ const CourseDetails = () => {
         console.log(Filltered)
 
     // console.log(course)
-    const {_id, cover, coursesName,  pricePer } = Finder;
+    const {_id, cover, coursesName,  pricePer } = course;
     // const {serviceData,setServiceData} = useState("");
 
     // useEffect(()=>{
@@ -55,7 +55,7 @@ const CourseDetails = () => {
         <div>
             {/* {coursesID} */}
             {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
+            <p>{Filltered.coursesName}</p>
             
             {/* <p>{serviceData.slice(0,5)}</p> */}
         </div>

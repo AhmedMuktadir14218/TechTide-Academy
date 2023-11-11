@@ -12,9 +12,8 @@ const CourseDetails = () => {
         console.log(Finder)
        const Filltered =  course.filter(course => course._id === intId);
         console.log(Filltered)
-
     // console.log(course)
-    const {_id, cover, coursesName,  pricePer } = Finder;
+    // const {_id, cover, coursesName,  pricePer } = course;
     // const {serviceData,setServiceData} = useState("");
 
     // useEffect(()=>{
@@ -53,9 +52,9 @@ const CourseDetails = () => {
 
     return (
         <div>
-            {/* {coursesID} */}
+            {coursesID}
             {/* <p>{serviceData._id}</p> */}
-            <p>{Finder.coursesName}</p>
+            <p>{Filltered.courses}</p>
             
             {/* <p>{serviceData.slice(0,5)}</p> */}
         </div>
