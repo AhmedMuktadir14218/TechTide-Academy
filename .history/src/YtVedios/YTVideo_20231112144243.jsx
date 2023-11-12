@@ -3,26 +3,25 @@ import   { useEffect, useState } from "react";
 const API = "AIzaSyBq8Lstm-AwCTWsaYsh31-QNMH0o1L1B1k";
 const channelId = "PLf3qsnGljClRUPUS1HpAItd_p2X0HKpEn";
 
-
-const fetchurl = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API}&playlistId=${channelId}&part=snippet,id&order=date&maxResults=20`;
+const fetchurl = `https://www.googleapis.com/youtube/v3/search?key=${API}&playlistId=${channelId}&part=snippet,id&order=date&maxResults=20`;
 
 const YTVideo = () => {
-    const [allVideos, setAllVideos] = useState([]);
+  const [allvideos, setAllvideos] = useState([]);
 
-    useEffect(() => {
-      fetch(fetchurl)
-        .then((response) => response.json())
-        .then((resJson) => {
-          const result = resJson.items.map((item) => ({
-            ...item,
-            videoLink: "https://www.youtube.com/embed/" + item.snippet.resourceId.videoId,
-          }));
-          setAllVideos(result);
-        })
-        .catch((error) => console.error("Error fetching data: ", error));
-    }, []);
-  
-    console.log(allVideos);
+  useEffect(() => {
+    fetch(fetchurl)
+      .then((response) => response.json())
+      .then((resJson) => {
+        const result = resJson.items.map((doc) => ({
+          ...doc,
+          Videolink: "https://www.youtube.com/embed/" + doc.id.videoId,
+        }));
+        setAllvideos(result);
+      })
+      .catch((error) => console.error("Error fetching data: ", error));
+  }, []);
+
+  console.log(allvideos);
 
   return (
     <>
@@ -32,7 +31,7 @@ const YTVideo = () => {
             width="560"
             height="315"
             src={video.videoLink}
-            // title={YouTube video player ${index}}
+            title={YouTube video player ${index}}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </div>

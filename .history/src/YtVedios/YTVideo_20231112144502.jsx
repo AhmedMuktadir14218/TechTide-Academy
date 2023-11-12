@@ -4,7 +4,7 @@ const API = "AIzaSyBq8Lstm-AwCTWsaYsh31-QNMH0o1L1B1k";
 const channelId = "PLf3qsnGljClRUPUS1HpAItd_p2X0HKpEn";
 
 
-const fetchurl = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API}&playlistId=${channelId}&part=snippet,id&order=date&maxResults=20`;
+const fetchurl = `https://www.googleapis.com/youtube/v3/searc?key=${API}&playlistId=${channelId}&part=snippet,id&order=date&maxResults=20`;
 
 const YTVideo = () => {
     const [allVideos, setAllVideos] = useState([]);

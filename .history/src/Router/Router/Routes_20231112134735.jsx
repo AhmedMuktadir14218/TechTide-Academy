@@ -67,7 +67,7 @@ export const router = createBrowserRouter([
     {
       
       path:'/yt',
-      element:<YTVideo></YTVideo>
+      element:<YTVideo
     },
     {
       

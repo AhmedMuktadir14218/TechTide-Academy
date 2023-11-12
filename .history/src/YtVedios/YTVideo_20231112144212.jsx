@@ -4,37 +4,31 @@ const API = "AIzaSyBq8Lstm-AwCTWsaYsh31-QNMH0o1L1B1k";
 const channelId = "PLf3qsnGljClRUPUS1HpAItd_p2X0HKpEn";
 
 
-const fetchurl = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API}&playlistId=${channelId}&part=snippet,id&order=date&maxResults=20`;
+const fetchUrl = `https://www.googleapis.com/youtube/v3/playlistItems?key=${API_KEY}&playlistId=${playlistId}&part=snippet,id&order=date&maxResults=20`;
 
 const YTVideo = () => {
-    const [allVideos, setAllVideos] = useState([]);
+  const [allvideos, setAllvideos] = useState([]);
 
-    useEffect(() => {
-      fetch(fetchurl)
-        .then((response) => response.json())
-        .then((resJson) => {
-          const result = resJson.items.map((item) => ({
-            ...item,
-            videoLink: "https://www.youtube.com/embed/" + item.snippet.resourceId.videoId,
-          }));
-          setAllVideos(result);
-        })
-        .catch((error) => console.error("Error fetching data: ", error));
-    }, []);
-  
-    console.log(allVideos);
+  useEffect(() => {
+    fetch(fetchurl)
+      .then((response) => response.json())
+      .then((resJson) => {
+        const result = resJson.items.map((doc) => ({
+          ...doc,
+          Videolink: "https://www.youtube.com/embed/" + doc.id.videoId,
+        }));
+        setAllvideos(result);
+      })
+      .catch((error) => console.error("Error fetching data: ", error));
+  }, []);
+
+  console.log(allvideos);
 
   return (
     <>
-       {allVideos.map((video, index) => (
+      {allvideos.map((video, index) => (
         <div key={index}>
-          <iframe
-            width="560"
-            height="315"
-            src={video.videoLink}
-            // title={YouTube video player ${index}}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=3xWUqkf6kyS1lYvt&amp;list=PLHiZ4m8vCp9NfppyV7QSPjO92Z96VE1O4" title="YouTube video player"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       ))}
     </>
