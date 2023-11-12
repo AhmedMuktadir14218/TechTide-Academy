@@ -1,5 +1,8 @@
+
+
 import { useParams } from "react-router-dom";
 import useCourse from "../../Hooks/useCourse";
+import { useEffect, useState } from "react";
 
 const CourseDetails = () => {
     const [course] = useCourse();
@@ -19,9 +22,9 @@ const CourseDetails = () => {
 
     return (
         <div>
-           <p>{_id}</p>
-           
-           <p>{coursesName}</p>
+            {/* {coursesID} */}
+            <p>{_id}</p>
+            <p>{coursesName}</p>
         </div>
     );
 };

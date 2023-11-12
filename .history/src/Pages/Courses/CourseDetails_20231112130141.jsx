@@ -19,9 +19,9 @@ const CourseDetails = () => {
 
     return (
         <div>
-           <p>{_id}</p>
-           
-           <p>{coursesName}</p>
+            {/* {coursesID} */}
+            <p>{_id}</p>
+            <p>{coursesName}</p>
         </div>
     );
 };
