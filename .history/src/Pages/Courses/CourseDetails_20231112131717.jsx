@@ -16,15 +16,14 @@ const CourseDetails = () => {
     }
 
     const { _id, cover, coursesName, pricePer } = Finder;
-
-
+    <script ></script>
+<div class="elfsight-app-1e45f477-2b0c-4f40-b55d-4a4effcdef6d" data-elfsight-app-lazy></div>
 
     return (
         <div>
            <p>{_id}</p>
            <div>
-           {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ptSAV-P46-qrL-d9&amp;list=PLHiZ4m8vCp9PHnOIT7gd30PCBoYCpGoQM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-           <div src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer  className="elfsight-app-1e45f477-2b0c-4f40-b55d-4a4effcdef6d" data-elfsight-app-lazy></div>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ptSAV-P46-qrL-d9&amp;list=PLHiZ4m8vCp9PHnOIT7gd30PCBoYCpGoQM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
            </div>
            <p>{coursesName}</p>
         </div>
