@@ -9,7 +9,7 @@ const YTVideo = () => {
     useEffect(() => {
       fetch{fetchurl}
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => )
 
     
       

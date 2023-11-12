@@ -7,10 +7,7 @@ var fetchurl=`https://www.googleapis.com/youtube/v3/playlists?key=${api}&channel
 
 const YTVideo = () => {
     useEffect(() => {
-      fetch{fetchurl}
-      .then(res => res.json())
-      .then(data => console.log(data))
-
+      
     
       
     }, [])

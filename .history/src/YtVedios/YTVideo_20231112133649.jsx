@@ -6,15 +6,7 @@ const channelID ='@LearnwithSumit';
 var fetchurl=`https://www.googleapis.com/youtube/v3/playlists?key=${api}&channelId=${channelID}&part=snippet,id`;
 
 const YTVideo = () => {
-    useEffect(() => {
-      fetch{fetchurl}
-      .then(res => res.json())
-      .then(data => console.log(data))
-
-    
-      
-    }, [])
-    
+    useEffect
 
     return (
         <>
