@@ -1,6 +1,6 @@
 import   { useEffect, useState } from "react";
 
-const API = "AIzaSyBq8Lstm-AwCTWsaYsh31-QNMH0o1L1B1k";
+const API : import.meta.env.VITE_Googleapi;
 const channelId = "PLf3qsnGljClRUPUS1HpAItd_p2X0HKpEn";
 
 
