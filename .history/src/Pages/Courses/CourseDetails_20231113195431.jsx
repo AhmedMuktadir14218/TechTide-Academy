@@ -23,7 +23,7 @@ const CourseDetails = () => {
         <div>
            <p>{_id}</p>
            <div>
-           <div src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer  className="elfsight-app-1e45f477-2b0c-4f40-b55d-4a4effcdef6d" data-elfsight-app-lazy></div>
+                      <div src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer  className="elfsight-app-1e45f477-2b0c-4f40-b55d-4a4effcdef6d" data-elfsight-app-lazy></div>
            </div>
            <p>{coursesName}</p>
         </div>
