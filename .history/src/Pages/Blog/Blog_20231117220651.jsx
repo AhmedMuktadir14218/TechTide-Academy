@@ -1,15 +1,12 @@
 import blogimg1 from "../../../public/images/testo/t1.webp"
+import blogimg2 from "../../../public/images/testo/t2.webp"
+import blogimg3 from "../../../public/images/testo/t3.webp"
 const Blog = () => {
     return (
-        <>
+        <div className='max-w-screen-xl mx-auto'>
  <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 mb-8">
   {/* 1 */}
 <div>
-      {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
 
 <article
   className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm"
@@ -66,7 +63,7 @@ const Blog = () => {
 >
   <img
     alt="Office"
-    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    src={blogimg3}
     className="h-56 w-full object-cover"
   />
 
@@ -116,7 +113,7 @@ const Blog = () => {
 >
   <img
     alt="Office"
-    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    src={blogimg2}
     className="h-56 w-full object-cover"
   />
 
@@ -153,7 +150,7 @@ const Blog = () => {
 </div>
   
  </div>
-        </>
+        </div>
     );
 };
 

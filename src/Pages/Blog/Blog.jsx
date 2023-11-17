@@ -7,11 +7,6 @@ const Blog = () => {
  <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-24 mb-8">
   {/* 1 */}
 <div>
-      {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
 
 <article
   className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm"
