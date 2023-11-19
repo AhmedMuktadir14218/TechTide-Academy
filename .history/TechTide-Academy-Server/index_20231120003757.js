@@ -3,7 +3,7 @@ const cors = require('cors')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 require('dotenv').config();
 const app = express();
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8000
 
 //middleware
 app.use(cors());
@@ -12,11 +12,9 @@ app.use(express.json())
 console.log(process.env.DB_USER)
 
 // const uri = "mongodb+srv://<techTide>:<ATf9TgARhWydOm9A>@cluster0.mrejoa7.mongodb.net/?retryWrites=true&w=majority"
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mrejoa7.mongodb.net/?retryWrites=true&w=majority`
-// console.log(uri)
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fgbafng.mongodb.net/?retryWrites=true&w=majority`;
-
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mrejoa7.mongodb.net/?retryWrites=true&w=majority`
 console.log(uri)
+
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -29,25 +27,32 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
-    
-   
-    const menuCollection = client.db("Flavour").collection("menu");
-    const reviewCollection = client.db("Flavour").collection("reviews");
-
-    app.get('/menu', async(req, res) =>{
-        const result = await menuCollection.find().toArray();
-        // const result = await serviceCollection.find().toArray();
-        res.send(result);
-    })
-    
-    app.get('/reviews', async(req, res) =>{
-        const result = await reviewCollection.find().toArray();
-        res.send(result);
-    })
-
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    
+    const courseCollection = client.db('Courses').collection('courses');        
+    
+  
+        // Use Aggregate to query multiple collection and then merge data
+        app.get('/appointmentOptions', async (req, res) => {
+          const date = req.query.date;
+          const query = {};
+          const options = await appointmentOptionCollection.find(query).toArray();
+
+          // get the bookings of the provided date
+          const bookingQuery = { appointmentDate: date }
+          const alreadyBooked = await bookingsCollection.find(bookingQuery).toArray();
+
+          // code carefully :D
+          options.forEach(option => {
+              const optionBooked = alreadyBooked.filter(book => book.treatment === option.name);
+              const bookedSlots = optionBooked.map(book => book.slot);
+              const remainingSlots = option.slots.filter(slot => !bookedSlots.includes(slot))
+              option.slots = remainingSlots;
+          })
+          res.send(options);
+      });
     
 
   } finally {

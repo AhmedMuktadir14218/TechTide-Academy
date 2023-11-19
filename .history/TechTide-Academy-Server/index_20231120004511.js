@@ -3,7 +3,7 @@ const cors = require('cors')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 require('dotenv').config();
 const app = express();
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8000
 
 //middleware
 app.use(cors());
@@ -30,21 +30,18 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     
-   
-    const menuCollection = client.db("Flavour").collection("menu");
-    const reviewCollection = client.db("Flavour").collection("reviews");
-
-    app.get('/menu', async(req, res) =>{
-        const result = await menuCollection.find().toArray();
-        // const result = await serviceCollection.find().toArray();
-        res.send(result);
-    })
+    const courseCollection = client.db('Courses').collection('courses');        
     
-    app.get('/reviews', async(req, res) =>{
-        const result = await reviewCollection.find().toArray();
-        res.send(result);
-    })
+  
+        // Use Aggregate to query multiple collection and then merge data
+        app.get('/course', async (req, res) => {
+          // const date = req.query.date;
+          // const query = {};
+          const options = await courseCollection.find().toArray();
 
+         
+          res.send(options);
+      });
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
