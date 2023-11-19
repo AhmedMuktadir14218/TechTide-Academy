@@ -25,17 +25,11 @@ const client = new MongoClient(uri, {
 });
 async function run() {
   try {
-    
-    const courseCollection = client.db('Courses').collection('courses');        
-    
-    app.get('/courses', async (req, res) => {
+    app.get('/users', async (req, res) => {
       const query = {};
-      const users = await courseCollection.find(query).toArray();
+      const users = await usersCollection.find(query).toArray();
       res.send(users);
   });
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
   }
 }
 run().catch(console.dir);

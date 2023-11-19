@@ -26,11 +26,10 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     
-    const courseCollection = client.db('Courses').collection('courses');        
-    
-    app.get('/courses', async (req, res) => {
+    const usersCollection = client.db('gentlemans-cut').collection('users');        
+    app.get('/users', async (req, res) => {
       const query = {};
-      const users = await courseCollection.find(query).toArray();
+      const users = await usersCollection.find(query).toArray();
       res.send(users);
   });
   } finally {

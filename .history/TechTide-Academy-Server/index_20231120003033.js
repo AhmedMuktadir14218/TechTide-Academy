@@ -26,7 +26,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     
-    const courseCollection = client.db('Courses').collection('courses');        
+    const courseCollection = client.db('TechTideAcademy').collection('courses');        
     
     app.get('/courses', async (req, res) => {
       const query = {};
