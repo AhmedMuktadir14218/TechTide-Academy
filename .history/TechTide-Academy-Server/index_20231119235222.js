@@ -1,5 +1,5 @@
 const express = require('express')
-const cors = require('cors')
+const cors=require('cors')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const app = express()
 const port = process.env.PORT || 5000
@@ -10,7 +10,7 @@ app.use(express.json())
 
 
 
-const uri = "mongodb+srv://ahmed1514218:<cEyI0pfaUxL5puo8>@cluster0.mrejoa7.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://ahmed1514218:<password>@cluster0.mrejoa7.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -33,7 +33,6 @@ async function run() {
   }
 }
 run().catch(console.dir);
-
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
