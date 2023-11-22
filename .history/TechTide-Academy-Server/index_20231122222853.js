@@ -34,7 +34,7 @@ async function run() {
     const menuCollection = client.db("Course").collection("Services");
     // const reviewCollection = client.db("Flavour").collection("reviews");
 
-    app.get('/service', async(req, res) =>{
+    app.get('/serv', async(req, res) =>{
         const result = await menuCollection.find().toArray();
         // const result = await serviceCollection.find().toArray();
         res.send(result);
