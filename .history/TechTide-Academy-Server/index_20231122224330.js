@@ -31,7 +31,7 @@ async function run() {
     await client.connect();
     
    
-    const menuCollection = client.db("extraCourse").collection("courses");
+    const menuCollection = client.db("extraCourse").collection("coourses");
     // const reviewCollection = client.db("Flavour").collection("reviews");
 
     app.get('/courses', async(req, res) => {

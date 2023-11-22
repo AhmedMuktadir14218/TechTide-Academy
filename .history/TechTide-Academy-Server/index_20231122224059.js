@@ -31,18 +31,14 @@ async function run() {
     await client.connect();
     
    
-    const menuCollection = client.db("extraCourse").collection("courses");
+    const menuCollection = client.db("Course").collection("Services");
     // const reviewCollection = client.db("Flavour").collection("reviews");
 
-    app.get('/courses', async(req, res) => {
-      try {
+    app.get('/service', async(req, res) =>{
         const result = await menuCollection.find().toArray();
+        // const result = await serviceCollection.find().toArray();
         res.send(result);
-      } catch (error) {
-        console.error("Error fetching data from MongoDB:", error);
-        res.status(500).send("Internal Server Error");
-      }
-    });
+    })
     
     // app.get('/reviews', async(req, res) =>{
     //     const result = await reviewCollection.find().toArray();

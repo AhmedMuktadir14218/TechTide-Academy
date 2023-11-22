@@ -31,10 +31,7 @@ async function run() {
     await client.connect();
     
    
-    const menuCollection = client.db("extraCourse").collection("courses");
-    // const reviewCollection = client.db("Flavour").collection("reviews");
-
-    app.get('/courses', async(req, res) => {
+    app.get('/service', async(req, res) => {
       try {
         const result = await menuCollection.find().toArray();
         res.send(result);
